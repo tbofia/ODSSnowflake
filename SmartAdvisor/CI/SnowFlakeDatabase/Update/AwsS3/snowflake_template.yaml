@@ -1,0 +1,139 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Provision the S3 buckets and roles for Snowflake service
+Parameters: 
+  Environment: 
+    Type: String
+    Default: nonprod
+    AllowedValues: 
+      - nonprod
+      - prod
+      - sandbox
+    Description: Enter what account type this is being run in - dev, prod, or sandbox. Default is dev.
+  DevOpsAccountId:
+    Type: String
+    Description: Enter the account id of the Dev Ops AWS account you want that will run Snowflake automation.
+  DevOpsAccountRole:
+    Type: String
+    Description: Enter the name of the assumee IAM role in the Dev Ops AWS account that will run Snowflake automation.
+  ExternalStageAccountId:
+    Type: String
+    Description: Enter the account id of the AWS account used by Snowflake for the external stage.
+  ExternalStageAccountUser:
+    Type: String
+    Description: Enter the name of the IAM user used by Snowflake for the external stage.
+  ExternalId:
+    Type: String
+    Description: Enter the external id used by Snowflake for the external stage.
+Resources:
+  SnowflakeBucket:
+    Type: AWS::S3::Bucket
+    DeletionPolicy: Retain
+    Properties: 
+      AccessControl: Private
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault:
+              SSEAlgorithm: AES256
+      BucketName: !Join ['-', [!Ref 'AWS::AccountId', !Ref 'AWS::Region', csg, snowflake, !Ref 'Environment']]
+      LoggingConfiguration:
+        DestinationBucketName: !Ref 'LoggingBucket'
+      LifecycleConfiguration:
+        Rules:
+        - Id: DeleteAfter30Days
+          ExpirationInDays: 30
+          Status: Enabled
+  LoggingBucket:
+    Type: AWS::S3::Bucket
+    DeletionPolicy: Retain
+    Properties: 
+      AccessControl: LogDeliveryWrite
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault:
+              SSEAlgorithm: AES256
+      BucketName: !Join ['-', [!Ref 'AWS::AccountId', !Ref 'AWS::Region', csg, snowflake, server, logs, !Ref 'Environment']]
+  BucketRole:
+    Type: AWS::IAM::Role
+    Properties: 
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              AWS:
+                - !Sub 'arn:aws:iam::${DevOpsAccountId}:role/${DevOpsAccountRole}'
+            Action:
+              - 'sts:AssumeRole'
+      Description: Role to allow S3 access for Snowflake from Dev Ops account
+      Policies: 
+        - PolicyName: s3-snowflake-automation-policy
+          PolicyDocument:
+            Version: 2012-10-17
+            Statement: 
+              - 
+                Effect: "Allow"
+                Action: 
+                  - "s3:ListAllMyBuckets"
+                  - "s3:GetBucketLocation"
+                Resource: "*"
+              -
+                Effect: "Allow"
+                Action:
+                  - "s3:ListBucket"
+                Resource: 
+                  - !Sub '${SnowflakeBucket.Arn}' 
+              -
+                Effect: "Allow"
+                Action:
+                  - "s3:GetObject"
+                  - "s3:PutObject"
+                  - "s3:DeleteObject"
+                Resource: 
+                  - !Sub '${SnowflakeBucket.Arn}/*'
+      RoleName: !Sub 'csg-snowflake-s3-${Environment}'
+  ExternalStageRole:
+    Type: AWS::IAM::Role
+    Properties: 
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              AWS:
+                - !Sub 'arn:aws:iam::${ExternalStageAccountId}:user/${ExternalStageAccountUser}'
+            Action:
+              - 'sts:AssumeRole'
+            Condition:
+              StringEquals:
+                sts:ExternalId: 
+                  - !Ref 'ExternalId'
+      Description: IAM Role for External Snowflake Stage
+      Policies: 
+        - PolicyName: s3-snowflake-external-stage-policy
+          PolicyDocument:
+            Version: 2012-10-17
+            Statement: 
+              - 
+                Effect: "Allow"
+                Action: 
+                  - "s3:ListBucket"
+                  - "s3:GetBucketLocation"
+                Resource: "*"
+              -
+                Effect: "Allow"
+                Action:
+                  - "s3:ListBucket"
+                Resource: 
+                  - !Sub '${SnowflakeBucket.Arn}' 
+              -
+                Effect: "Allow"
+                Action:
+                  - "s3:GetObject"
+                  - "s3:PutObject"
+                  - "s3:GetObjectVersion"
+                  - "s3:DeleteObject"
+                  - "s3:DeleteObjectVersion"
+                Resource: 
+                  - !Sub '${SnowflakeBucket.Arn}/*'
+      RoleName: !Sub 'csg-snowflake-s3-external-stage'

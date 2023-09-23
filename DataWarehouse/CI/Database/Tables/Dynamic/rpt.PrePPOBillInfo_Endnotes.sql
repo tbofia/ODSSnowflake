@@ -1,0 +1,14 @@
+CREATE TABLE IF NOT EXISTS rpt.PrePPOBillInfo_Endnotes
+(
+	OdsCustomerId INT NOT NULL,
+	billIDNo INT NULL,
+	line_no INT NULL,
+	linetype INT NULL,
+	Endnotes VARCHAR(50) NULL,
+	OVER_RIDE INT NULL,
+	ALLOWED REAL NULL,
+	ANALYZED REAL NULL,
+	RunDate DATETIME NULL
+);
+
+

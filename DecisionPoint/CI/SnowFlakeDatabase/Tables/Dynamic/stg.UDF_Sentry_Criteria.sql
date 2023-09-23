@@ -1,0 +1,19 @@
+CREATE OR REPLACE TABLE stg.UDF_Sentry_Criteria (
+	  OdsPostingGroupAuditId NUMBER(10, 0) NOT NULL
+	 , OdsCustomerId NUMBER(10, 0) NOT NULL
+	 , OdsCreateDate DATETIME NOT NULL
+	 , OdsSnapshotDate DATETIME NOT NULL
+	 , OdsRowIsCurrent INT NOT NULL
+	 , OdsHashbytesValue BINARY(8000) NULL
+	 , DmlOperation VARCHAR(1) NOT NULL
+	 , UdfIdNo NUMBER(10, 0) NULL
+	 , CriteriaID NUMBER(10, 0) NOT NULL
+	 , ParentName VARCHAR(50) NULL
+	 , Name VARCHAR(50) NULL
+	 , Description VARCHAR(1000) NULL
+	 , Operators VARCHAR(50) NULL
+	 , PredefinedValues VARCHAR NULL
+	 , ValueDataType VARCHAR(50) NULL
+	 , ValueFormat VARCHAR(50) NULL
+);
+

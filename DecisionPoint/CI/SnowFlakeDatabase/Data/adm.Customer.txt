@@ -1,0 +1,97 @@
+0	All	N/A		false	0	0	0	1	1
+1	AAAFL	Mmedical_AAAFL		false	0	1	1	1	1
+2	AAA Michigan	MMedical_AAAMI	AM	false	0	1	1	1	1
+3	Farmers Business	MMedical_FarmersBusiness		false	0	1	1	1	1
+4	Aequicap	MMedical_Aequicap	KK	false	0	1	1	1	1
+5	Affirmative	MMedical_Affirmative	NM	false	0	1	1	1	1
+6	NYCM	MMedical_NYCM	MU	false	0	1	1	1	1
+7	AIG	MMedical_AIG		false	0	1	1	0	0
+8	AIICO	MMedical_AIICO	IX	false	0	1	1	1	1
+9	CONNECT	MMedical_Ameriprise	ID	false	0	1	1	1	1
+10	FCCI	Mmedical_FCCI		false	0	1	1	1	1
+11	AmFam2	MMedical_AmFam2		false	0	1	1	1	1
+12	Amica	MMedical_Amica	AN	false	0	1	1	1	1
+13	Church Mutual	MMedical_ChurchMutual		false	0	1	1	1	1
+14	Mountain West	Mmedical_MountainWest		false	0	1	1	1	1
+15	CalCasualty	MMedical_CalCasualty	CK	false	0	1	1	1	1
+16	Cooperativa	MMedical_Cooperativa	CV	false	0	1	1	1	1
+17	DirectG	MMedical_DirectG	DT	false	0	1	1	1	1
+18	Elco	MMedical_Elco	EB	false	0	1	1	1	1
+19	Esurance	MMedical_Esurance	EE	false	0	1	1	1	1
+20	Explorer	MMedical_Explorer	ED	false	0	1	1	1	1
+21	Zventus	MMedical_Zventus		false	0	1	1	1	1
+22	FBFS	MMedical_FBFS	FF	false	0	1	1	1	1
+23	Foremost	MMedical_Foremost	FR	false	0	1	1	0	0
+24	NGIC	Mmedical_GMAC	GC	false	0	1	1	1	1
+25	Grange	Mmedical_Grange	GW	false	0	1	1	1	1
+26	Hallmark	MMedical_Hallmark	HB	false	0	1	1	1	1
+27	Hamilton	MMedical_Hamilton	HL	false	0	1	1	1	1
+28	Amtrust	MMedical_Amtrust		false	0	1	1	1	1
+29	Kemper	MMedical_Kemper	UI	false	0	1	1	1	1
+30	National Interstate	MMedical_NationalInterstate		false	0	1	1	1	1
+31	Mendota	MMedical_Mendota	MO	false	0	1	1	1	1
+32	Mercury Insurance Group	MMedical_Mercury	MY	false	0	1	1	1	1
+33	Met Life	MMedical_Metlife	ME	false	0	1	1	1	1
+34	Countrywide	MMedical_CountryWide		false	0	1	1	1	1
+35	Grange Mutual 3rd Party	MMedical_Grange3P		false	0	1	1	1	1
+36	MitchellProviderAnalytics	MitchellProviderAnalytics		false	0	1	1	1	1
+37	Occidental	MMedical_Occidental	DE	false	0	1	1	1	1
+38	OneBeacon	MMedical_OneBeacon	CU	false	0	1	1	1	1
+39	Plymouth Rock	MMedical_Palisades	PS	false	0	1	1	1	1
+40	Anchor General	MMedical_AnchorGeneral		false	0	1	1	1	1
+41	Permanent	Mmedical_Permanent	PE	false	0	1	1	1	1
+42	ProcuraCTG	MMedical_ProcuraCTG	PT	false	0	1	1	1	1
+43	Progressive	MMedical_Progressive	IF	false	1	1	0	1	1
+44	Safeco	Mmedical_Safeco	SC	false	0	1	1	1	1
+45	Acceptance	MMedical_FirstAcceptance		false	0	1	1	1	1
+46	Safeway	MMedical_Safeway	SY	false	0	1	1	1	1
+47	Sentry	MMedical_Sentry	SN	false	0	1	1	1	1
+48	StateFarm	MMedical_StateFarm	SF	false	0	1	1	1	1
+49	Texas Farm Bureau	MMedical_TexasFarmBureau		false	0	1	1	1	1
+50	James River	MMedical_JamesRiver		false	0	1	1	1	1
+51	Travelers	MMedical_Travelers	TV	false	0	1	1	1	1
+52	Michigan Farm Bureau	MMedical_MichiganFarmBureau		false	0	1	1	1	1
+53	UnitrinDirect	MMedical_UnitrinDirect	UA	false	0	1	1	1	1
+54	NYCComptroller	MMedical_NYCComptroller		false	0	1	1	1	1
+55	Assurant	MMedical_Assurant		false	0	1	1	1	1
+56	Liberty Mutual	MMedical_LibertyMutual	LM	false	0	1	1	1	1
+57	Tower	MMedical_Tower	TW	false	0	1	1	1	1
+58	Westfield	MMedical_Westfield	WC	false	0	1	1	1	1
+59	CNA	MMedical_CNA	CX	false	0	1	1	1	1
+60	Elephant	MMedical_Elephant	EH	false	0	1	1	1	1
+61	Imperial	MMedical_Imperial	IP	false	0	1	1	1	1
+62	AmFamDP	MMedical_AmFamDP	AF	false	0	1	1	1	1
+65	Hartford	MMedical_Hartford	HT	false	0	1	1	1	1
+66	CSAA Insurance Group	MMedical_CSAA	OA	false	0	1	1	1	1
+67	AlfaVision	MMedical_AlfaVision	VA	false	0	1	1	1	1
+68	Germania	MMedical_Germania	GD	false	0	1	1	1	1
+69	GIA	MMedical_GIA	5N	false	0	1	1	1	1
+70	Farmers Insurance Group	Mmedical_Farmers	FI	false	0	1	1	1	1
+71	BristolWest	Mmedical_BristolWest	RR	false	0	1	1	1	1
+72	Allstate	MMedical_Allstate	PZ	false	0	1	1	1	1
+73	AllstateV3	MMedical_AllstateNJ		false	0	1	1	1	1
+74	Ace	MMedical_Ace	AE	false	0	1	1	1	1
+75	AutoOne	MMedical_AutoOne	ON	false	0	1	1	1	1
+76	FredLoya	MMedical_FredLoya	QL	false	0	1	1	1	1
+77	Responsive	MMedical_Responsive	5R	false	0	1	1	1	1
+78	UAIC	MMedical_UAIC	4U	false	0	1	1	1	1
+79	Knight	MMedical_Knight	KT	false	0	1	1	1	1
+80	SafeAuto	MMedical_SafeAuto	5E	false	0	1	1	1	1
+81	Northland	MMedical_Northland	NL	false	0	1	1	1	1
+82	QBE	MMedical_QBE	QB	true	0	1	1	1	1
+83	USA	MMedical_USA	UC	false	0	1	1	1	1
+84	Sedgwick	MMedical_Sedgwick	SW	false	0	1	1	1	1
+85	Alfa Mutual	MMedical_Alfa	AL	false	0	1	1	1	1
+86	Wawanesa	MMedical_Wawanesa	WN	false	0	1	1	1	1
+87	SCS	MMedical_SCS	SZ	false	0	1	1	1	1
+88	Gainsco	MMedical_Gainsco	GF	false	0	1	1	1	1
+89	Geico	MMedical_Geico	GE	false	0	1	1	1	0
+90	NJM	Mmedical_NJM	MA	false	0	1	1	1	1
+91	Zurich	MMedical_Zurich	4H	false	0	1	1	1	1
+93	Canal	Mmedical_Canal		false	0	1	1	1	1
+94	PRMA	MMedical_PRMA		false	0	1	1	1	1
+95	StateFarm CIQ	MMedical_StateFarmCIQ		false	0	1	1	1	1
+96	MitchellReporting	VPNAnalytics		false	0	0	1	0	0
+97	Finance	Finance		false	0	0	0	0	0
+98	MetroMile	MMedical_MetroMile	MR	false	0	1	1	1	1
+99	Key	MMedical_Key	KY	false	0	1	1	1	1

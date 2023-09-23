@@ -1,0 +1,1897 @@
+1	BatchNumber		0		
+1	BillControlSeq		0		
+1	BillSeq		0		1
+1	ClientCode		0		
+1	Control		0		
+1	CreateDate		0		
+1	ExternalID		0		
+1	ExternalID2		0		
+1	Message		0		
+1	ModDate		0		
+1	ModUserID		0		
+2	Code		0		
+2	CreateDate		0		
+2	CreateUserID		0		
+2	LongDesc		0		
+2	ModDate		0		
+2	ModUserID		0		
+2	OldCode		0		
+2	OwnerApp		0		
+2	Priority		0		
+2	RecordStatus		0		
+2	ShortDesc		0		
+2	SiteCode		0		
+2	Source		0		
+2	TableCode		0		
+2	TypeCode		0		
+3	AttorneySeq		0		1
+3	AttorneyType		0		
+3	AuthBeginDate		0		
+3	AuthEndDate		0		
+3	BillingAddressSeq		0		
+3	ClaimSysSubSet		0		
+3	CreateDate		0		
+3	CreateUserID		0		
+3	CtrlNum1099		0		
+3	ExportDate		0		
+3	ExternalID		0		
+3	ExternalStatus		0		
+3	GroupCode		0		
+3	LicenseNum		0		
+3	MedicareNum		0		
+3	ModDate		0		
+3	ModUserID		0		
+3	Name		0		
+3	PmtDays		0		
+3	PracticeAddressSeq		0		
+3	Specialty1		0		
+3	Specialty2		0		
+3	SsnTinIndicator		0		
+3	Status		0		
+3	SurchargeCode		0		
+3	TaxAddressSeq		0		
+3	TIN		0		
+3	TINSuffix		0		
+3	WorkCompNum		0		
+3	WorkCompState		0		
+4	Address1		0		
+4	Address2		0		
+4	AttorneyAddressSeq		0		1
+4	City		0		
+4	ClaimSysSubSet		0		
+4	ContactFirstName		0		
+4	ContactLastName		0		
+4	ContactMiddleInitial		0		
+4	CountryCode		0		
+4	FacilityName		0		
+4	FaxNum		0		
+4	MailCode		0		
+4	PhoneNum		0		
+4	RecType		0		
+4	State		0		
+4	URFirstName		0		
+4	URLastName		0		
+4	URMiddleInitial		0		
+4	Zip		0		
+6	BillSeq		0		1
+6	ClientCode		0		
+6	ExclusiveFee		0		
+6	FeeAmount		0		
+6	FeeControlSeq		0		
+6	FeeCtrlSource		0		
+6	FeeOverride		0		
+6	FeeSourceID		0		
+6	FeeType		0		
+6	HandlingFee		0		
+6	InvoiceSeq		0		
+6	InvoiceSubSeq		0		
+6	OverrideVerified		0		
+6	PPONetworkID		0		
+6	ReductionCode		0		
+6	TransactionType		0		
+7	BillICDSeq		0		
+7	BillSeq		0		1
+7	ClientCode		0		
+7	CodeDate		0		
+7	CodeType		0		
+7	ICDCode		0		
+7	POA		0		
+8	BillDiagnosisSeq		0		
+8	BilledICDDiagnosis		0		
+8	BillSeq		0		1
+8	ClientCode		0		
+8	ICDBillUsageTypeID		0		
+8	ICDDiagnosisID		0		
+8	POA		0		
+9	BillSeq		0		1
+9	CapstoneRuleID		0		
+9	ChildTargetSeq		0		
+9	ChildTargetSubset		0		
+9	ClientCode		0		
+9	DateRuleFired		0		
+9	DateValidated		0		
+9	LineSeq		0		
+9	PendToID		0		
+9	RuleID		0		
+9	RuleSeverity		0		
+9	RuleType		0		
+9	Validated		0		
+9	ValidatedUserID		0		
+9	WFTaskSeq		0		
+10	AccidentEmployment		0		
+10	ActualRTWDate		0		
+10	Adjuster		0		
+10	BodyPart1		0		
+10	BodyPart2		0		
+10	BodyPart3		0		
+10	BodyPart4		0		
+10	BodyPart5		0		
+10	BranchID		0		
+10	CarKnowDate		0		
+10	ClaimAdminClaimNum		0		
+10	ClaimID		0		
+10	ClaimSeq		0		1
+10	ClaimSeverity		0		
+10	ClaimSysSubSet		0		
+10	ClaimType		0		
+10	ClientCodeDefault		0		
+10	CloseDate		0		
+10	CreateUserID		0		
+10	CtrlDay		0		
+10	DateLostBegan		0		
+10	DefendantAttorneySeq		0		
+10	DOI		0		
+10	ExternalClaimID		0		
+10	FirstDOS		0		
+10	HospitalAdmit		0		
+10	ICDVersion		0		
+10	IDCode		0		
+10	IDType		0		
+10	Job5Days		0		
+10	Job90Days		0		
+10	Jurisdiction		0		
+10	JurisdictionClaimID		0		
+10	LastDateofTrauma		0		
+10	LastDOS		0		
+10	LegalStatus1		0		
+10	LegalStatus2		0		
+10	LegalStatus3		0		
+10	LoadDate		0		
+10	Location		0		
+10	LostDays		0		
+10	MCOChoice		0		
+10	MCOFein		0		
+10	MCOTransInd		0		
+10	MedCloseDate		0		
+10	MedStipDate		0		
+10	MMIDate		0		
+10	ModDate		0		
+10	ModUserID		0		
+10	MPNChoice		0		
+10	MPNOptOutEffectiveDate		0		
+10	MPNOptOutPhysicianName		0		
+10	MPNOptOutPhysicianTIN		0		
+10	MPNOptOutTerminationDate		0		
+10	NatureInj		0		
+10	OccCode		0		
+10	PatientAlternatePhone		1		
+10	PatientCity		1		
+10	PatientCountryCode		0		
+10	PatientDOB		1	'01/01/'+CAST(YEAR(PatientDOB) AS VARCHAR(4))	
+10	PatientFirstName		1		
+10	PatientLastName		1		
+10	PatientMInitial		0		
+10	PatientPrimaryPhone		1		
+10	PatientSex		0		
+10	PatientSSN		1		
+10	PatientState		0		
+10	PatientStreet1		0		
+10	PatientStreet2		0		
+10	PatientWorkPhone		1		
+10	PatientZip		0		
+10	PermStationaryDate		0		
+10	PermStationaryInd		0		
+10	PlaintiffAttorneySeq		0		
+10	Policy5Days		0		
+10	Policy90Days		0		
+10	PolicyCoPayAmount		0		
+10	PolicyCoPayPct		0		
+10	PolicyDeductible		0		
+10	PolicyID		0		
+10	PolicyLimit		0		
+10	PolicyLimitResult		0		
+10	PolicyLimitWarningPct		0		
+10	PolicyTimeLimit		0		
+10	ProductCode		0		
+10	QualifiedInjWorkDate		0		
+10	QualifiedInjWorkInd		0		
+10	RelationToInsured		0		
+10	ReopenDate		0		
+10	RetToWorkDate		0		
+10	Status		0		
+10	URFlag		0		
+11	ClaimSysSubset		0		
+11	NumData		0		
+11	SubSeq		0		1
+11	SubType		0		
+11	TextData		0		
+11	TypeCode		0		
+19	Code		0		
+19	Description		0		
+19	Detailed		0		
+19	ICDDiagnosisID		0		
+19	ShortDesc		0		
+20	AdjAllow		0		
+20	AllowUnits		0		
+20	BasisOfCost		0		
+20	BillSeq		0		1
+20	BRAllow		0		
+20	Certification		0		
+20	Charge		0		
+20	ClientCode		0		
+20	ClientLineType		0		
+20	CompoundDrugIndicator		0		
+20	CoPay		0		
+20	CostToChargeRatio		0		
+20	DaysSupply		0		
+20	Deductible		0		
+20	DMEFrequencyCode		0		
+20	DOS		0		
+20	DOSTo		0		
+20	DupBillSeq		0		
+20	DupClientCode		0		
+20	DxRef		0		
+20	DxRefList		0		
+20	ExternalID		0		
+20	FSAmount		0		
+20	ItemCostAdditional		0		
+20	ItemCostInvoiced		0		
+20	LineSeq		0		
+20	LineSeqOrgRev		0		
+20	ODGFlag		0		
+20	OverrideAllowUnits		0		
+20	PaidProcCode		0		
+20	PaidProcType		0		
+20	PayOverride		0		
+20	POS		0		
+20	PPOAllow		0		
+20	PPOOverride		0		
+20	PriorAuthNum		0		
+20	ProcBilled		0		
+20	ProcCode		0		
+20	ProcNew		0		
+20	ProcType		0		
+20	ProvRenderingNPI		0		
+20	ProvSecondaryID		0		
+20	ProvSecondaryIDQualifier		0		
+20	ProvType		0		
+20	ReevalAmount		0		
+20	ReevalParagraphJurisdiction		0		
+20	ReevalTxtPtr		0		
+20	ReevalTxtSrc		0		
+20	Refill		0		
+20	RevenueCode		0		
+20	RXNumber		0		
+20	TOS		0		
+20	UCAmount		0		
+20	Units		0		
+20	URAllow		0		
+20	URCaseSeq		0		
+20	URPriority		0		
+20	URQtyAllow		0		
+20	URQtySvd		0		
+20	URReviewSeq		0		
+20	URStatus		0		
+20	URWorkflowStatus		0		
+21	BillSeq		0		1
+21	ClientCode		0		
+21	LineSeq		0		
+21	ModDate		0		
+21	Modifier		0		
+21	ModSeq		0		
+21	ModSiteCode		0		
+21	ModSubset		0		
+21	ModUserID		0		
+21	ReasonBillSeq		0		
+21	ReasonClientCode		0		
+21	ReasonLineSeq		0		
+21	ReasonType		0		
+21	ReasonValue		0		
+21	ReductionCode		0		
+21	UserEntered		0		
+22	BillSeq		0		1
+22	ClientCode		0		
+22	LineSeq		0		
+22	ModUserID		0		
+22	OverrideAmount		0		
+22	ReductionAmount		0		
+22	ReductionCode		0		
+23	CBREReasonID		0		
+23	Code		0		
+23	CreateDate		0		
+23	CreateUserID		0		
+23	Func		0		
+23	GroupCode		0		
+23	Jurisdiction		0		
+23	ModComment1		0		
+23	ModComment2		0		
+23	ModDate		0		
+23	ModDescription		0		
+23	ModType		0		
+23	ModUserID		0		
+23	Remark1		0		
+23	Remark2		0		
+23	Remark3		0		
+23	Remark4		0		
+23	RemarkQualifier1		0		
+23	RemarkQualifier2		0		
+23	RemarkQualifier3		0		
+23	RemarkQualifier4		0		
+23	SiteCode		0		
+23	Statute		0		
+23	Val		0		
+24	AutoPendFlag		0		
+24	BillSeq		0		1
+24	ClientCode		0		
+24	PendByUserID		0		
+24	PendDate		0		
+24	PendSeq		0		
+24	PendToID		0		
+24	Priority		0		
+24	ReasonCode		0		
+24	ReleaseByUserID		0		
+24	ReleaseDate		0		
+24	ReleasedByExternalUserName		0		
+24	ReleaseFlag		0		
+24	RuleID		0		
+24	WFTaskSeq		0		
+25	Address1		0		
+25	Address2		0		
+25	AdminKey		0		
+25	City		0		
+25	ClaimSysSubSet		0		
+25	CreateBy		0		
+25	CreateDate		0		
+25	DeptIndusRelNum		0		
+25	EffectiveDate		0		
+25	EqOppIndicator		0		
+25	ExternalID		0		
+25	FaxNum		0		
+25	FeeRateCtrlEx		0		
+25	FeeRateCtrlIn		0		
+25	LocationCode		0		
+25	MCOFlag		0		
+25	MCOStartDate		0		
+25	ModDate		0		
+25	ModUserID		0		
+25	MonthlyPremium		0		
+25	NAICSCode		0		
+25	Name		0		
+25	PhoneNum		0		
+25	PolicyCoPayAmount		0		
+25	PolicyCoPayPct		0		
+25	PolicyDeductible		0		
+25	PolicyID		0		
+25	PolicyLimitAmount		0		
+25	PolicyLimitResult		0		
+25	PolicyLimitWarningPct		0		
+25	PolicySeq		0		1
+25	PolicyTimeLimit		0		
+25	PPOProfileID		0		
+25	PPOProfileSiteCode		0		
+25	ReceiptHandlingCode		0		
+25	SalesTaxExempt		0		
+25	SelfInsured		0		
+25	State		0		
+25	StateTaxID		0		
+25	SubdivisionName		0		
+25	TerminationDate		0		
+25	TIN		0		
+25	TxNonSubscrib		0		
+25	URProfileID		0		
+25	Zip		0		
+26	AllInclusive		0		
+26	AlternateTIN		0		
+26	BilateralDiscount		0		
+26	BiLevel		0		
+26	BillingAddress1		0		
+26	BillingAddress2		0		
+26	BillingCity		0		
+26	BillingState		0		
+26	BillingZip		0		
+26	BR_RNEDiscount		0		
+26	CarveOut		0		
+26	CompanyName		0		
+26	DRGGreaterThanBC		0		
+26	DRGMinPercentBC		0		
+26	DRGRate		0		
+26	EndDate		0		
+26	ExclusivePPOOrgFlag		0		
+26	ExportFlag		0		
+26	FIPSCountyCode		0		
+26	First		0		
+26	GroupCode		0		
+26	GroupName		0		
+26	ICUPerdiem		0		
+26	InpatFile		0		
+26	IPCondition		0		
+26	IPDiscountBaseValue		0		
+26	IPEffectiveDate		0		
+26	IPOffCharge		0		
+26	IPOffFS		0		
+26	IPOffUCR		0		
+26	IPStopCapAmount		0		
+26	IPStopCapRate		0		
+26	IPTerminationDate		0		
+26	LessorOfThreshold		0		
+26	LicenseNum		0		
+26	Matrix		0		
+26	MaxDisc		0		
+26	MedicalGroup		0		
+26	MedicalGroupCode		0		
+26	MedicalPerdiem		0		
+26	MedicareNum		0		
+26	MinDisc		0		
+26	MiscParm		0		
+26	ModDate		0		
+26	MultiSurg		0		
+26	NPI		0		
+26	OPAdditionalDiscountOffLink		0		
+26	OPCondition		0		
+26	OPDiscountBaseValue		0		
+26	OPEffectiveDate		0		
+26	OPLineItemDefaultDiscount		0		
+26	OPManualIndicator		0		
+26	OPOffCharge		0		
+26	OPOffFS		0		
+26	OPOffUCR		0		
+26	OPStopCapAmount		0		
+26	OPStopCapRate		0		
+26	OPTerminationDate		0		
+26	OPUCRPercentile		0		
+26	OutFile		0		
+26	PaymentAddressFlag		0		
+26	PhoneNum		0		
+26	PPOContractID		0		1
+26	PPOContractIDOld		0		
+26	PPONetworkID		0		
+26	PPOtoFSSeq		0		
+26	PPOType		0		
+26	PracticeAddress1		0		
+26	PracticeAddress2		0		
+26	PracticeCity		0		
+26	PracticeCounty		0		
+26	PracticeState		0		
+26	PracticeZip		0		
+26	PrimaryCareFlag		0		
+26	ProvType		0		
+26	PsychiatricPerdiem		0		
+26	RateMode		0		
+26	Region		0		
+26	SiteCode		0		
+26	SpcCode		0		
+26	Specialty1		0		
+26	Specialty2		0		
+26	StartDate		0		
+26	StopLossTypeCode		0		
+26	SurgeryDiscount2		0		
+26	SurgeryDiscount3		0		
+26	SurgeryDiscount4		0		
+26	SurgeryDiscount5		0		
+26	SurgicalPerdiem		0		
+26	TIN		0		
+26	URCoordinatorFlag		0		
+27	AllowMaint		0		
+27	BillControlSeq		0		1
+27	City		0		
+27	DemoRates		0		
+27	EmailAddress		0		
+27	Name		0		
+27	PhoneNum		0		
+27	PPOBridgeExists		0		
+27	PPONetworkComment		0		
+27	PPONetworkID		0		
+27	PPOToOther		0		
+27	PPOType		0		
+27	PPOVersion		0		
+27	PrintAsProvider		0		
+27	ReqExtPPO		0		
+27	State		0		
+27	Street		0		
+27	SubNetworkIndicator		0		
+27	TIN		0		
+27	UsesDrg		0		
+27	WebSite		0		
+27	Zip		0		
+28	City		0		
+28	Comment		0		
+28	CreateDate		0		
+28	CreateUserID		0		
+28	EmailAddress		0		
+28	ExternalID		0		
+28	GroupCode		0		
+28	GroupName		0		
+28	ModDate		0		
+28	ModUserID		0		
+28	PhoneNum		0		
+28	PPONetworkID		0		
+28	SiteCode		0		
+28	State		0		
+28	Street1		0		
+28	Street2		0		
+28	TIN		0		
+28	WebSite		0		
+28	Zip		0		
+29	AuthBeginDate		0		
+29	AuthEndDate		0		
+29	BillingAddressSeq		0		
+29	CreateDate		0		
+29	CreateUserID		0		
+29	CtrlNum1099		0		
+29	EntityType		0		
+29	ExportDate		0		
+29	ExternalID		0		
+29	ExternalStatus		0		
+29	FacilityNPI		0		
+29	FirstName		0		
+29	GroupCode		0		
+29	HospitalSeq		0		
+29	LastName		0		
+29	LicenseNum		0		
+29	MedicareNum		0		
+29	MiddleName		0		
+29	ModDate		0		
+29	ModUserID		0		
+29	Name		0		
+29	NCPDPID		0		
+29	NPI		0		
+29	PmtDays		0		
+29	PracticeAddressSeq		0		
+29	ProviderSeq		0		1
+29	ProviderSubSet		0		
+29	ProvType		0		
+29	Specialty1		0		
+29	Specialty2		0		
+29	SsnTinIndicator		0		
+29	Status		0		
+29	Suffix		0		
+29	SurchargeCode		0		
+29	TaxAddressSeq		0		
+29	TIN		0		
+29	TINSuffix		0		
+29	VerificationGroupID		0		
+29	WorkCompNum		0		
+29	WorkCompState		0		
+30	Address1		0		
+30	Address2		0		
+30	City		0		
+30	ContactFirstName		0		
+30	ContactLastName		0		
+30	ContactMiddleInitial		0		
+30	CountryCode		0		
+30	FacilityName		0		
+30	FaxNum		0		
+30	MailCode		0		
+30	PhoneNum		0		
+30	ProviderAddressSeq		0		1
+30	ProviderSubSet		0		
+30	RecType		0		
+30	State		0		
+30	URFirstName		0		
+30	URLastName		0		
+30	URMiddleInitial		0		
+30	Zip		0		
+32	CreateDate		0		
+32	CreateUserID		0		
+32	Description		0		
+32	EntityTypeCode		0		
+32	InitialTaskSeq		0		
+32	ModDate		0		
+32	ModUserID		0		
+32	PauseTaskSeq		0		
+32	RecordStatus		0		
+32	WFlowSeq		0		1
+33	Configuration		0		
+33	CreateDate		0		
+33	CreateUserID		0		
+33	DefaultPendGroup		0		
+33	ModDate		0		
+33	ModUserID		0		
+33	Name		0		
+33	NodeLeft		0		
+33	NodeTop		0		
+33	NoPrior		0		
+33	NoRestart		0		
+33	Parameter1		0		
+33	ParameterX		0		
+33	RecordStatus		0		
+33	WFLowSeq		0		
+33	WFTaskRegistrySeq		0		
+33	WFTaskSeq		0		1
+34	Adjuster		0		
+34	AdjVerifRcvdDate		0		
+34	AdjVerifRequestDate		0		
+34	AdmissionSource		0		
+34	AdmissionType		0		
+34	AdmitDate		0		
+34	AdmitHour		0		
+34	AdmittingDxCode		0		
+34	AdmittingDxRef		0		
+34	AppAssignee		0		
+34	AppBenefits		0		
+34	AuditDate		0		
+34	BillableLines		0		
+34	BillReevalReasonCode		0		
+34	BillSeq		0		1
+34	BillSeqNewRev		0		
+34	BillSeqOrgRev		0		
+34	BRActualClientCode		0		
+34	BRFee		0		
+34	BRFeeNet		0		
+34	BROverrideClientCode		0		
+34	BRReduction		0		
+34	CarrierSeqNew		0		
+34	CaseType		0		
+34	CheckNum		0		
+34	ClaimSeq		0		
+34	ClaimSysSubSet		0		
+34	ClientCode		0		
+34	ClientTOB		0		
+34	CompanySeq		0		
+34	ConsultDate		0		
+34	ContractAmount		0		
+34	ContractType		0		
+34	CreateDate		0		
+34	CreateUserID		0		
+34	DischargeDate		0		
+34	DischargeHour		0		
+34	DocCtrlID		0		
+34	DocCtrlType		0		
+34	DOI		0		
+34	DOSFirst		0		
+34	DOSLast		0		
+34	DRG		0		
+34	DRGBilled		0		
+34	DRGCalculated		0		
+34	DRGCompositeFactor		0		
+34	DRGDischargeFraction		0		
+34	DRGInpatientMultiplier		0		
+34	DRGValue		0		
+34	DRGWeight		0		
+34	DueDate		0		
+34	DupBillSeq		0		
+34	DupClientCode		0		
+34	EFTOrigCoSupplCode		0		
+34	EFTPmtFormatCode		0		
+34	EFTPmtMethodCode		0		
+34	EFTReceiverAcctNum		0		
+34	EFTReceiverAcctQual		0		
+34	EFTReceiverDFIID		0		
+34	EFTSenderAcctNum		0		
+34	EFTSenderDFIID		0		
+34	EHubID		0		
+34	EstimatedBRClientCode		0		
+34	EstimatedBRJuris		0		
+34	ExaminerRevFlag		0		
+34	ExternalStatus		0		
+34	FlowStatus		0		
+34	ForcePay		0		
+34	FupEndDate		0		
+34	FupStartDate		0		
+34	HistoryBatchNumber		0		
+34	HospitalSeq		0		
+34	ICDVersion		0		
+34	IncrementValue		0		
+34	Invoiced		0		
+34	InvoicedPPO		0		
+34	InvoicedPPOWholesale		0		
+34	InvoicedWholesale		0		
+34	ManualReductionMode		0		
+34	MCO		0		
+34	ModDate		0		
+34	ModUserID		0		
+34	NegoType		0		
+34	NGDFee		0		
+34	NGDFeeNet		0		
+34	NGDReduction		0		
+34	ODGFlag		0		
+34	OtherBillingProviderSeq		0		
+34	OtherBillingProviderSubset		0		
+34	OtherData		0		
+34	OverrideFeeControlRetail		0		
+34	OverrideFeeControlWholesale		0		
+34	PaidAmount		0		
+34	PaidDate		0		
+34	PatientAccount		0		
+34	PatientStatus		0		
+34	PaymentClearedDate		0		
+34	PmtAcceptDate		0		
+34	PmtAuth		0		
+34	PmtExportDate		0		
+34	PolicyCoPayAmount		0		
+34	PolicyCoPayPct		0		
+34	PolicyDeductible		0		
+34	PolicyLimit		0		
+34	PolicyLimitResult		0		
+34	PolicyTimeLimit		0		
+34	PolicyWarningPct		0		
+34	POS		0		
+34	PostDate		0		
+34	PPOContractID		0		
+34	PPOFee		0		
+34	PPOFeeNet		0		
+34	PPONetworkID		0		
+34	PPONetworkJurisdictionInd		0		
+34	PPONetworkJurisdictionInsurerSeq		0		
+34	PPOPrc		0		
+34	PPOReduction		0		
+34	PPOStackList		0		
+34	PPOStatus		0		
+34	PriorAuthReferralNum1		0		
+34	PriorAuthReferralNum2		0		
+34	ProvBillingNPI		0		
+34	ProvBillingTaxonomy		0		
+34	ProvBillLicenseNum		0		
+34	ProvFacilityLicenseNum		0		
+34	ProvFacilityNPI		0		
+34	ProvFacilityTaxonomy		0		
+34	ProviderSeq		0		
+34	ProviderSubSet		0		
+34	ProvInvoice		0		
+34	ProvLicenseNum		0		
+34	ProvMedicareNum		0		
+34	ProvOperatingLicenseNum		0		
+34	ProvOperatingNPI		0		
+34	ProvOther1NPI		0		
+34	ProvOther2NPI		0		
+34	ProvReferringNPI		0		
+34	ProvRenderingNPI		0		
+34	ProvRenderingTaxonomy		0		
+34	ProvRxLicenseNum		0		
+34	ProvSigOnFile		0		
+34	ProvSpecialty1		0		
+34	ProvSpecialty2		0		
+34	ProvState		0		
+34	ProvType		0		
+34	ProvVendorExternalID		0		
+34	ProvZip		0		
+34	RcvdBrDate		0		
+34	RcvdDate		0		
+34	ReevalAllow		0		
+34	RefProvDEANum		0		
+34	RefProvFirstName		0		
+34	RefProvMiddleName		0		
+34	RefProvName		0		
+34	RefProvSuffix		0		
+34	Region		0		
+34	RenderingProvFirstName		0		
+34	RenderingProvLastName		0		
+34	RenderingProvMiddleName		0		
+34	RenderingProvSuffix		0		
+34	RereviewCount		0		
+34	ResourceUtilGroup		0		
+34	ResubmissionReasonCode		0		
+34	RetailSalesTaxZip		0		
+34	RetCtrlFlg		0		
+34	RetCtrlNum		0		
+34	ReviewDate		0		
+34	SendBackMsg1		0		
+34	SendBackMsg1SiteCode		0		
+34	SendbackMsg1Subset		0		
+34	SendBackMsg2		0		
+34	SendBackMsg2SiteCode		0		
+34	SendbackMsg2Subset		0		
+34	SiteCode		0		
+34	SourceID		0		
+34	StatementFromDate		0		
+34	StatementThroughDate		0		
+34	Status		0		
+34	StatusPrior		0		
+34	SubmitDate		0		
+34	SubProductCode		0		
+34	SubProductID		0		
+34	SubProductPrice		0		
+34	SubProductPriceNet		0		
+34	TOB		0		
+34	TOS		0		
+34	TotalAllow		0		
+34	TotalCharge		0		
+34	TotalCoPay		0		
+34	TotalDeductible		0		
+34	TotalFee		0		
+34	TxBillType		0		
+34	UB92ProcMethod		0		
+34	UB92TOB		0		
+34	URFee		0		
+34	URFeeNet		0		
+34	URFlag		0		
+34	URReduction		0		
+34	Visits		0		
+34	VocPlanSeq		0		
+34	WholesaleSalesTaxZip		0		
+35	AcctRep		0		
+35	AllowReReview		0		
+35	ApplyCptAmaUcrRules		0		
+35	AutoBundling		0		
+35	AutoDup		0		
+35	AutoDupIncludeProv		0		
+35	BasePPOFeesOffFS		0		
+35	BEAdjuster		0		
+35	BEAdjVerifDates		0		
+35	BEAutoCalcDueDate		0		
+35	BECarrierSeqFlag		0		
+35	BEClientDueDays		0		
+35	BEClientTOBTableCode		0		
+35	BECollisionBills		0		
+35	BECollisionDosLines		0		
+35	BECollisionProvBills		0		
+35	BECollisionProviders		0		
+35	BECollisionURCases		0		
+35	BEConsultDate		0		
+35	BEDAWTableCode		0		
+35	BEDefaultTaxZip		0		
+35	BEDiagnosis		0		
+35	BEDisableDOICheck		0		
+35	BEDisablePPOSearch		0		
+35	BEDocCtrlID		0		
+35	BEDOI		0		
+35	BEDueDate		0		
+35	BEFastMatch		0		
+35	BEForcePay		0		
+35	BEHideAdjusterColumn		0		
+35	BEHideCoPayColumn		0		
+35	BEHideDeductColumn		0		
+35	BEMedAlert		0		
+35	BENYNF10Fields		0		
+35	BEOther		0		
+35	BEOtherBillingProvider		0		
+35	BEPaidDate		0		
+35	BEPatientAcctNum		0		
+35	BEPayAuthorization		0		
+35	BEPayAuthTableCode		0		
+35	BEPermitAllowOver		0		
+35	BEPmtWarnDays		0		
+35	BEPriorBillDefault		0		
+35	BEProcCrossWalk		0		
+35	BEProvBillingLicense		0		
+35	BEProvFacilityLicense		0		
+35	BEProvInvoice		0		
+35	BEProvLicense		0		
+35	BEProvSigOnFile		0		
+35	BEProvSpcl1TableCode		0		
+35	BEProvSpcl2TableCode		0		
+35	BEProvTypeTableCode		0		
+35	BEQuickInfoCode		0		
+35	BERcvdBillReviewDate		0		
+35	BERcvdCarrierDate		0		
+35	BERefPhys		0		
+35	BEShowDEAWarning		0		
+35	BEShowLineExternalIDColumn		0		
+35	BEShowLinePriorAuthColumn		0		
+35	BEShowPharmacyColumns		0		
+35	BEStopAtLineDxRef		0		
+35	BEStopAtLineUnits		0		
+35	BESubmitDt		0		
+35	BESubProdFeeInfo		0		
+35	BESubProductTableCode		0		
+35	BETimeEntry		0		
+35	BEValidateBillClaimICD9		0		
+35	BEValidateTotal		0		
+35	ClaimSysSubSet		0		
+35	ClaimVerification		0		
+35	ClientCode		0		
+35	ClientComment		0		
+35	ClientGroupId		0		
+35	ClientType		0		
+35	CollisionsSearchBy		0		
+35	CompanySeq		0		1
+35	ControlNum		0		
+35	CountryTableCode		0		
+35	CPTRarity		0		
+35	CreateDate		0		
+35	CreateUserID		0		
+35	DefaultBRtoUCR		0		
+35	DefaultCoPayDeduct		0		
+35	DefaultJurisClientCode		0		
+35	DefaultRetailSalesTaxZip		0		
+35	DefaultWholesaleSalesTaxZip		0		
+35	DelayDays		0		
+35	DenyNonInjDrugs		0		
+35	DrugDispBrand		0		
+35	DrugDispFeeApplyTo		0		0
+35	DrugDispGen		0		
+35	DrugMarkUpBrand		0		
+35	DrugMarkUpGen		0		
+35	EDIAckRequired		0		
+35	EnableDRGGrouper		0		
+35	EnableGenericReprice		0		
+35	EORProfileSeq		0		
+35	ExcludedSmartClientSelect		0		
+35	ExcludeURDM		0		
+35	ExternalID		0		
+35	FeeRateCntrlEx		0		
+35	FeeRateCntrlIn		0		
+35	FutureDOSMonthLimit		0		
+35	GeoState		0		
+35	ICDRarity		0		
+35	ICDToCPTRarity		0		
+35	InvoiceBRCycle		0		
+35	InvoiceCombined		0		
+35	InvoiceGroupBy		0		
+35	InvoicePPOCycle		0		
+35	InvoicePPOTax		0		
+35	InvoiceRetailProfile		0		
+35	InvoiceTax		0		
+35	InvoiceWholesaleProfile		0		
+35	Jurisdiction		0		
+35	MedAlertDays		0		
+35	MedAlertMaxCharge		0		
+35	MedAlertVisits		0		
+35	MedAlertWarnVisits		0		
+35	ModDate		0		
+35	ModUserID		0		
+35	MUEEdits		0		
+35	Name		0		
+35	NGDTableCode		0		
+35	PaymentHandlingCode		0		
+35	PendReasonTableCode		0		
+35	PolicyCoPayAmount		0		
+35	PolicyCoPayPct		0		
+35	PolicyDeductible		0		
+35	PolicyLimit		0		
+35	PolicyLimitWarningPct		0		
+35	PolicyTimeLimit		0		
+35	PPOProfileID		0		
+35	PPOProfileSiteCode		0		
+35	ProductCode		0		
+35	ProviderSubSet		0		
+35	ProvVerification		0		
+35	ReceiptHandlingCode		0		
+35	RemitAddress1		0		
+35	RemitAddress2		0		
+35	RemitAttention		0		
+35	RemitCityStateZip		0		
+35	RemitPhone		0		
+35	ReportingETL		0		
+35	RootClaimLength		0		
+35	SalesTaxExempt		0		
+35	SmartGuidelinesFlag		0		
+35	StateRptInd		0		
+35	Status		0		
+35	SupplyLimit		0		
+35	SupplyMarkup		0		
+35	TxNonSubscrib		0		
+35	UCRMarkUp		0		
+35	UCRMarkup2		0		
+35	UCRPercentile		0		
+35	UCRPercentile2		0		
+35	UCRSource		0		
+35	UCRSource2		0		
+35	URImportCtrlGroup		0		
+35	URImportCtrlNum		0		
+35	URImportUsed		0		
+35	URProfileID		0		
+35	URProgStartDate		0		
+35	UseAllowOnDup		0		
+35	VendorProviderSubSet		0		
+35	VocRehab		0		
+36	Address1		0		
+36	Address2		0		
+36	Adjuster		0		
+36	City		0		
+36	ClaimSysSubSet		0		
+36	CreateDate		0		
+36	CreateUserID		0		
+36	Email		0		
+36	FaxNum		0		
+36	FirstName		0		
+36	LastName		0		
+36	MInitial		0		
+36	ModDate		0		
+36	ModUserID		0		
+36	PhoneNum		0		
+36	PhoneNumExt		0		
+36	State		0		
+36	Title		0		
+36	Zip		0		
+37	Adjuster		0		
+37	ClaimSysSubset		0		
+37	PendGroupCode		0		
+38	BilledICDProcedure		0		
+38	BillProcedureSeq		0		
+38	BillSeq		0		1
+38	ClientCode		0		
+38	CodeDate		0		
+38	ICDBillUsageTypeID		0		
+38	ICDProcedureID		0		
+39	Applied		0		
+39	BillSeq		0		1
+39	ClientCode		0		
+39	LinkName		0		
+39	RateType		0		
+40	BillProviderSeq		0		
+40	BillSeq		0		1
+40	ClientCode		0		
+40	DEANum		0		
+40	FirstName		0		
+40	LastName		0		
+40	LicenseNum		0		
+40	MiddleName		0		
+40	NPI		0		
+40	Qualifier		0		
+40	Suffix		0		
+41	Active		0		
+41	BillReevalReasonCategorySeq		0		1
+41	BillReevalReasonCode		0		
+41	CreateDate		0		
+41	CreateUserID		0		
+41	LongDescription		0		
+41	ModDate		0		
+41	ModUserID		0		
+41	ShortDescription		0		
+41	SiteCode		0		
+42	Address1		0		
+42	Address2		0		
+42	AdminKey		0		
+42	BranchID		0		
+42	BranchSeq		0		1
+42	City		0		
+42	ClaimSysSubSet		0		
+42	ContactName		0		
+42	DIRNum		0		
+42	EffectiveDate		0		
+42	ExternalID		0		
+42	FaxNum		0		
+42	FeeRateCntrlEx		0		
+42	FeeRateCntrlIn		0		
+42	LocationCode		0		
+42	ModDate		0		
+42	ModUserID		0		
+42	Name		0		
+42	PhoneNum		0		
+42	RuleFire		0		
+42	SalesTaxExempt		0		
+42	State		0		
+42	StateTaxID		0		
+42	TerminationDate		0		
+42	TIN		0		
+42	Zip		0		
+43	BRERuleCategoryID		0		
+43	CategoryDescription		0		
+44	AutZoneInd		0		
+44	CountyName		0		
+44	CountyNum		0		
+44	CpyDtlCode		0		
+44	CtyDlvInd		0		
+44	CtyStFacCode		0		
+44	CtyStKey		0		
+44	CtyStMailInd		0		
+44	CtyStName		0		
+44	CtyStNameAbv		0		
+44	FinanceNum		0		
+44	PreLstCtyKey		0		
+44	PreLstCtyNme		0		
+44	StateAbbrv		0		
+44	UnqZipInd		0		
+44	ZipClsCode		0		
+44	ZipCode		0		
+45	ClaimDiagSeq		0		
+45	ClaimSeq		0		1
+45	ClaimSysSubSet		0		
+45	DiagCode		0		
+46	ClaimDiagnosisSeq		0		
+46	ClaimSeq		0		1
+46	ClaimSysSubSet		0		
+46	ICDDiagnosisID		0		
+47	AdjusterRequired		0		
+47	AttorneyTaxAddrRequired		0		
+47	BEOverridePermissionFlag		0		
+47	BEReevalLineAddDelete		0		
+47	BEUROverridesRequireReviewRef		0		
+47	BodyPartTableCode		0		
+47	ClaimAccess		0		
+47	ClaimExternalIDasCarrierClaimID		0		
+47	ClaimExternalIDasClaimAdminClaimNum		0		
+47	ClaimIDMask		0		
+47	ClaimSysDesc		0		
+47	ClaimSysSubset		0		
+47	CPTGroupToIndividual		0		
+47	CreateDate		0		
+47	CreateUserID		0		
+47	EnableCEPHeaderFieldEdits		0		
+47	EnableClaimClientCodeDefault		0		
+47	EnableSmartClientSelection		0		
+47	FinancialAggregation		0		
+47	HCOTransIndTableCode		0		
+47	HospitalAdmitTableCode		0		
+47	Job5DaysTableCode		0		
+47	Job90DaysTableCode		0		
+47	LglCode1TableCode		0		
+47	LglCode2TableCode		0		
+47	LglCode3TableCode		0		
+47	MCOProgram		0		
+47	ModDate		0		
+47	ModUserID		0		
+47	PendPPOEDIControl		0		
+47	PermStationaryTableCode		0		
+47	Policy5DaysTableCode		0		
+47	Policy90DaysTableCode		0		
+47	PolicyCoPayAmount		0		
+47	PolicyCoPayPct		0		
+47	PolicyDeductible		0		
+47	PolicyDefaults		0		
+47	PolicyExternalIDasCarrierPolicyID		0		
+47	PolicyholderReq		0		
+47	PolicyLimit		0		
+47	PolicyLimitResult		0		
+47	PolicyLimitWarningPct		0		
+47	PolicyTimeLimit		0		
+47	QualifiedInjWorkTableCode		0		
+47	ReevalCopyDocCtrlID		0		
+47	RelateClaimsTotalPolicyDetail		0		
+47	RestrictUserAccess		0		
+47	RootClaimLength		0		
+47	SCSClientCodeMask		0		
+47	SCSClientSelectionCode		0		
+47	SCSDefaultClient		0		
+47	SCSProviderSubset		0		
+47	UREntryValidations		0		
+47	UROccTableCode		0		
+47	URProfileID		0		
+47	ValidateAdjuster		0		
+47	ValidateBranch		0		
+47	ValidatePolicy		0		
+49	ClientCode		0		
+49	EffectiveDate		0		
+49	InsurerSeq		0		1
+49	InsurerType		0		
+49	TerminationDate		0		
+50	Description		0		
+50	EntityTypeID		0		
+50	EntityTypeKey		0		
+54	Address1		0		
+54	Address2		0		
+54	AltID		0		
+54	City		0		
+54	CreateDate		0		
+54	CreateUserID		0		
+54	FaxNum		0		
+54	InsurerSeq		0		1
+54	InsurerType		0		
+54	Jurisdiction		0		
+54	ModDate		0		
+54	ModUserID		0		
+54	NAICCoCode		0		
+54	NAICGpCode		0		
+54	Name		0		
+54	NCCICarrierCode		0		
+54	NCCIGroupCode		0		
+54	PhoneNum		0		
+54	State		0		
+54	StateID		0		
+54	TIN		0		
+54	Zip		0		
+55	AnestFormat		0		
+55	AnestRndUp		0		
+55	AnestUnit		0		
+55	DaysToPay		0		
+55	DaysToPayQualify		0		
+55	DisputeDaysToPay		0		
+55	DisputeDaysToPayQualify		0		
+55	eBillsDaysToPay		0		
+55	eBillsDaysToPayQualify		0		
+55	Hospital		0		
+55	ICD10ComplianceDate		0		
+55	ICDEdition		0		
+55	JurisdictionID		0		
+55	Name		0		
+55	OutPatientFS		0		
+55	POSTableCode		0		
+55	ProcFileVer		0		
+55	ProvSpclTableCode		0		
+55	ProvTypeTableCode		0		
+55	StateMandateSSN		0		
+55	TOBTableCode		0		
+55	TOSTableCode		0		
+59	CreateDate		0		
+59	CreateUserID		0		
+59	JurisdictionStackExclusive		0		
+59	ModDate		0		
+59	ModUserID		0		
+59	PPOProfileID		0		
+59	ProfileDesc		0		
+59	ReevalFullStackWhenOrigAllowNoHit		0		
+59	SiteCode		0		
+59	SmartSearchPageMax		0		
+60	CreateDate		0		
+60	CreateUserID		0		
+60	JurisdictionStackExclusive		0		
+60	LogDateTime		0		
+60	loginame		0		
+60	ModDate		0		
+60	ModUserID		0		
+60	PPOProfileHistorySeq		0		1
+60	PPOProfileID		0		
+60	ProfileDesc		0		
+60	RecordDeleted		0		
+60	ReevalFullStackWhenOrigAllowNoHit		0		
+60	SiteCode		0		
+60	SmartSearchPageMax		0		
+61	DefaultExtendedFilters		0		
+61	DefaultExtendedSearches		0		
+61	EffectiveDate		0		
+61	JurisdictionInd		0		
+61	JurisdictionInsurerSeq		0		1
+61	JurisdictionUseOnly		0		
+61	NetworkOrder		0		
+61	POS		0		
+61	PPONetworkID		0		
+61	PPOProfileID		0		
+61	PPOProfileSiteCode		0		
+61	PPOSSLicReq		0		
+61	PPOSSTinReq		0		
+61	ProfileRegionID		0		
+61	ProfileRegionSiteCode		0		
+61	SearchLogic		0		
+61	SeveredTies		0		
+61	TerminationDate		0		
+61	Verification		0		
+62	DefaultExtendedFilters		0		
+62	DefaultExtendedSearches		0		
+62	EffectiveDate		0		
+62	JurisdictionInd		0		
+62	JurisdictionInsurerSeq		0		
+62	JurisdictionUseOnly		0		
+62	LogDateTime		0		
+62	loginame		0		
+62	NetworkOrder		0		
+62	POS		0		
+62	PPONetworkID		0		
+62	PPOProfileID		0		
+62	PPOProfileNetworksHistorySeq		0		1
+62	PPOProfileSiteCode		0		
+62	PPOSSLicReq		0		
+62	PPOSSTinReq		0		
+62	ProfileRegionID		0		
+62	ProfileRegionSiteCode		0		
+62	RecordDeleted		0		
+62	SearchLogic		0		
+62	SeveredTies		0		
+62	TerminationDate		0		
+62	Verification		0		
+63	Category		0		
+63	Explanation		0		
+63	PPONetworkID		0		
+63	Priority		0		
+63	RateTypeCode		0		
+63	RateTypeDescription		0		
+63	VBColor		0		
+64	ProfileRegionID		0		
+64	RegionName		0		
+64	RegionTypeCode		0		
+64	SiteCode		0		
+65	ProfileRegionID		0		
+65	ProfileRegionSiteCode		0		
+65	ZipCodeFrom		0		
+65	ZipCodeTo		0		
+66	CbrCode		0		
+66	CreateDate		0		
+66	Creator		0		
+66	DataSource		0		
+66	DeactivationDate		0		
+66	Description		0		
+66	Id		0		
+66	ImplementationDate		0		
+66	LastUpdateDate		0		
+66	LastUpdater		0		
+67	AllowDummyProviders		0		
+67	CascadeUpdatesOnImport		0		
+67	ProviderAccess		0		
+67	ProviderSubset		0		
+67	ProviderSubSetDesc		0		
+67	RootExtIDOverrideDelimiter		0		
+67	TaxAddrRequired		0		
+68	Beg		0		
+68	EndZip		0		
+68	Extension		0		
+68	Jurisdiction		0		
+68	Region		0		
+68	RegionDescription		0		
+69	AccessAllWorkQueues		0		
+69	ActiveStatus		0		
+69	AllowPosting		0		
+69	AutomaticNetworkLogin		0		
+69	BEDeferManualModeMsg		0		
+69	BEPermitAllowOver		0		
+69	BESalesTaxZipCodeAccess		0		
+69	CapstoneConfigurationAccess		0		
+69	CompanySeq		0		1
+69	CreateDate		0		
+69	CreateUserID		0		
+69	EditBillControl		0		
+69	EditPPOProfile		0		
+69	EmailAddress		0		
+69	EmailNotify		0		
+69	EnableAdjusterMenu		0		
+69	EnableClaimAdds		0		
+69	EnableClientMaintenance		0		
+69	EnableEDIAutomationMaintenance		0		
+69	EnableHistoryMaintenance		0		
+69	EnableInvoiceCreditVoid		0		
+69	EnablePendRelease		0		
+69	EnablePolicyAdds		0		
+69	EnablePPOAccess		0		
+69	EnablePPOFastMatchAdds		0		
+69	EnablePPOProfileEdit		0		
+69	EnableProvAdds		0		
+69	EnableReevaluations		0		
+69	EnableSalesTaxMaintenance		0		
+69	EnableSupervisorRole		0		
+69	EnableUrAccess		0		
+69	EnableURCommentView		0		
+69	EnableUserMaintenance		0		
+69	EnableXtableUpdate		0		
+69	EraseBillTempHistory		0		
+69	ExternalID		0		
+69	FeeAccess		0		
+69	InvoiceGenAccess		0		
+69	LandingZoneAccess		0		
+69	LastLoggedInDate		0		
+69	ModDate		0		
+69	ModUserID		0		
+69	Name		0		
+69	NetworkLogin		0		
+69	PermitCheckReissue		0		
+69	PermitRereviews		0		
+69	PermitUDFDefinition		0		
+69	PromptToCreateMCC		0		
+69	RestrictDiaryNotes		0		
+69	RestrictEORNotes		0		
+69	RestrictExternalDiaryNotes		0		
+69	ReviewLevel		0		
+69	SecurityLevel		0		
+69	UserID		0		
+69	UserPassword		0		
+69	UserRoleID		0		
+69	UWQAutoNextBill		0		
+69	UWQDisableOptions		0		
+69	UWQDisableRules		0		
+70	MitchellProviderKey		0		
+70	OrgOdsCustomerId		0		
+70	ProviderClusterKey		0		
+70	ProviderSeq		0		1
+70	ProviderSubSet		0		
+70	ProviderType		0		
+72	AsstSurgeon		0		
+72	Bav		0		
+72	Extension		0		
+72	FSProcDescription		0		
+72	Fup		0		
+72	Ip		0		
+72	Jurisdiction		0		
+72	Mult		0		
+72	Panel		0		
+72	ProcedureCode		0		
+72	ProcGroup		0		
+72	ProUnitValue1		0		
+72	ProUnitValue10		0		
+72	ProUnitValue11		0		
+72	ProUnitValue12		0		
+72	ProUnitValue2		0		
+72	ProUnitValue3		0		
+72	ProUnitValue4		0		
+72	ProUnitValue5		0		
+72	ProUnitValue6		0		
+72	ProUnitValue7		0		
+72	ProUnitValue8		0		
+72	ProUnitValue9		0		
+72	SectionFlag		0		
+72	SiteCode		0		
+72	Star		0		
+72	Sv		0		
+72	TechUnitValue1		0		
+72	TechUnitValue10		0		
+72	TechUnitValue11		0		
+72	TechUnitValue12		0		
+72	TechUnitValue2		0		
+72	TechUnitValue3		0		
+72	TechUnitValue4		0		
+72	TechUnitValue5		0		
+72	TechUnitValue6		0		
+72	TechUnitValue7		0		
+72	TechUnitValue8		0		
+72	TechUnitValue9		0		
+72	UnitValue1		0		
+72	UnitValue10		0		
+72	UnitValue11		0		
+72	UnitValue12		0		
+72	UnitValue2		0		
+72	UnitValue3		0		
+72	UnitValue4		0		
+72	UnitValue5		0		
+72	UnitValue6		0		
+72	UnitValue7		0		
+72	UnitValue8		0		
+72	UnitValue9		0		
+72	ViewType		0		
+73	Abbreviation		0		
+73	BEMsg		0		
+73	BEOverride		0		
+73	DefaultDenialMessageCode		0		
+73	DefaultMessageCode		0		
+73	ReductionCode		0		
+73	ReductionDescription		0		
+74	AutoApprovalCode		0		
+74	CostPerVisit		0		
+74	CostsMean		0		
+74	ICDDescription		0		
+74	ICDDiagnosisID		0		
+74	IncidenceRate		0		
+74	PaymentFlag		0		
+74	ProcedureCode		0		
+74	ProcedureDescription		0		
+74	ProcedureFrequency		0		
+74	Visits25Perc		0		
+74	Visits50Perc		0		
+74	Visits75Perc		0		
+74	VisitsMean		0		
+81	Cat		0		
+81	CreateDate		0		
+81	CreateUserID		0		
+81	Disp		0		
+81	DrugCode		0		
+81	DrugsDescription		0		
+81	DrugType		0		
+81	ModDate		0		
+81	ModUserID		0		
+81	UpdateFlag		0		
+81	Uv		0		
+82	AsstSurgeon		0		
+82	Bav		0		
+82	EffectiveDate		0		
+82	Extension		0		
+82	FSProcDescription		0		
+82	Fup		0		
+82	Ip		0		
+82	Jurisdiction		0		
+82	Mult		0		
+82	Panel		0		
+82	ProcedureCode		0		
+82	ProcGroup		0		
+82	ProUnitValue		0		
+82	SectionFlag		0		
+82	SiteCode		0		
+82	Star		0		
+82	Sv		0		
+82	TechUnitValue		0		
+82	TerminationDate		0		
+82	UnitValue		0		
+82	ViewType		0		
+83	CodeGroup		0		
+83	CodeSource		0		
+83	Description		0		
+83	EffectiveDate		0		
+83	GeoAreaCode		0		
+83	Jurisdiction		0		
+83	ServiceCode		0		
+83	TermDate		0		
+84	HCPCS		0		
+84	IP1995		0		
+84	IP1996		0		
+84	IP1997		0		
+84	IP1998		0		
+84	Jurisdiction		0		
+84	MdicqmSeq		0		1
+84	MedicareICQMDescription		0		
+84	NPI		0		
+84	OP1995		0		
+84	OP1996		0		
+84	OP1997		0		
+84	OP1998		0		
+84	ProviderNum		0		
+84	ProvSuffix		0		
+84	Revenue		0		
+84	ServiceCode		0		
+100	ClaimSeq		0		1
+100	ClaimSysSubset		0		
+100	CreateDate		0		
+100	CreateUserID		0		
+100	ModDate		0		
+100	ModUserID		0		
+100	NumData		0		
+100	SubSeq		0		
+100	SubType		0		
+100	TextData		0		
+100	TypeCode		0		
+101	BillSeq		0		1
+101	ClientCode		0		
+101	CreateDate		0		
+101	CreateUserID		0		
+101	ModDate		0		
+101	ModUserID		0		
+101	NumData		0		
+101	SubSeq		0		
+101	SubType		0		
+101	TextData		0		
+101	TypeCode		0		
+102	ClientCode		0		
+102	CreateDate		0		
+102	CreateUserID		0		
+102	ModDate		0		
+102	ModUserID		0		
+102	NumData		0		
+102	SubSeq		0		1
+102	SubType		0		
+102	TextData		0		
+102	TypeCode		0		
+103	BillControlHistorySeq		0		
+103	BillControlSeq		0		
+103	BillSeq		0		1
+103	ClientCode		0		
+103	Control		0		
+103	CreateDate		0		
+103	Deleted		0		
+103	EDIBatchLogSeq		0		
+103	ExternalID		0		
+103	ExternalID2		0		
+103	Message		0		
+103	ModUserID		0		
+104	AckNote		0		
+104	AckNoteCode		0		
+104	BatchNumber		0		
+104	DateFrom		0		
+104	DateTo		0		
+104	DBVersion		0		
+104	EDIMapToolID		0		
+104	EDIMapToolSiteCode		0		
+104	EDIPartnerID		0		
+104	EDIPortType		0		
+104	EDIType		0		
+104	EDIXmitSeq		0		1
+104	ExternalBatchDate		0		
+104	ExternalBatchID		0		
+104	FileLocation		0		
+104	FileSpec		0		
+104	ModDate		0		
+104	ModUserID		0		
+104	ReceiverID		0		
+104	RecommendedPayment		0		
+104	ResubmitDate		0		
+104	ResubmitUserID		0		
+104	SARelatedBatchID		0		
+104	SenderID		0		
+104	TransmissionStatus		0		
+104	UserID		0		
+104	UserNotes		0		
+104	XmitDate		0		
+105	FromTaskSeq		0		1
+105	LinkWhen		0		
+105	ToTaskSeq		0		
+106	ContextID		0		
+106	CreateDate		0		
+106	CreateUserID		0		
+106	EntitySeq		0		1
+106	EntitySubset		0		
+106	EntityTypeCode		0		
+106	ModDate		0		
+106	ModUserID		0		
+106	Parameter1		0		
+106	Priority		0		
+106	PriorStatus		0		
+106	PriorWFTaskSeq		0		
+106	Status		0		
+106	TaskMessage		0		
+106	WFTaskSeq		0		
+107	Action		0		
+107	Description		0		
+107	EntityTypeCode		0		
+107	LargeImageResID		0		
+107	NAction		0		
+107	PersistBefore		0		
+107	SmallImageResID		0		
+107	WFTaskRegistrySeq		0		1
+108	ControlRowCount		0		0
+108	CreateDate		0		0
+108	ExtractDate		0		0
+108	ExtractRowCount		0		0
+108	LastChangeDate		0		0
+108	LastUpdateDate		0		0
+108	LoadDate		0		0
+108	LoadRowCount		0		0
+108	PostingGroupAuditId		0		0
+108	ProcessAuditId		0		0
+108	ProcessId		0		0
+108	Status		0		0
+108	TotalDeletedRecords		0		0
+108	TotalRecordsInSource		0		0
+108	TotalRecordsInTarget		0		0
+108	UpdateRowCount		0		0
+109	CoreDBVersionId		0		0
+109	CreateDate		0		0
+109	CustomerId		0		0
+109	DataExtractTypeId		0		0
+109	LastChangeDate		0		0
+109	OdsVersion		0		0
+109	OltpPostingGroupAuditId		0		0
+109	PostingGroupAuditId		0		0
+109	PostingGroupId		0		0
+109	SnapshotCreateDate		0		0
+109	Status		0		0
+110	AccountNum		0		0
+110	ARAddr1		0		0
+110	ARAddr2		0		0
+110	ARCity		0		0
+110	ARCompany		0		0
+110	ARContact		0		0
+110	ARPhone		0		0
+110	ARState		0		0
+110	ARZip		0		0
+110	BatchAckSLA		0		0
+110	CreateC8s		0		0
+110	CreateDate		0		0
+110	CreateEORs		0		0
+110	CreateEORWithC8		0		0
+110	CreateEORWithNF10		0		0
+110	CreateNF10s		0		0
+110	CreateUserID		0		0
+110	DayBillCount		0		0
+110	DayCounter		0		0
+110	DaysPast		0		0
+110	DetailAckSLA		0		0
+110	EDIAcknowledgement		0		0
+110	EDIControlSeq		0		0
+110	EDIJurisdiction		0		0
+110	EDIMapToolID		0		0
+110	EDIMapToolSiteCode		0		0
+110	EDIPortType		0		0
+110	EDIReceiverIdentifier		0		0
+110	EDIReceiverQualifier		0		0
+110	EDIReceiverZIP		0		0
+110	EDISenderIdentifier		0		0
+110	EDISenderQualifier		0		0
+110	EDISenderZIP		0		0
+110	EDITestIndicator		0		0
+110	EmailNotificationList		0		0
+110	EORFileFormat		0		0
+110	ExcludeAdjuster		0		0
+110	ExcludeAttorney		0		0
+110	ExcludeBillAttachment		0		0
+110	ExcludeBranch		0		0
+110	ExcludeClaim		0		0
+110	ExcludeInsurer		0		0
+110	ExcludePolicy		0		0
+110	ExportCARCs		0		0
+110	ExportCredits		0		0
+110	ExportDiaryNotes		0		0
+110	ExportNegatives		0		0
+110	ExportOtherBillingProvider		0		0
+110	ExportPPOBillComment		0		0
+110	ExportZeroAllowBills		0		0
+110	ExportZeroAllowReevals		0		0
+110	ExtendedHeader		0		0
+110	ExtendedTrailer		0		0
+110	FormatRevenueCodes		0		0
+110	IncludeAdjusterUDF		0		0
+110	IncludeBillAttachment		0		0
+110	IncludeBillImage		0		0
+110	IncludeBillUDF		0		0
+110	IncludeClaimUDF		0		0
+110	IncludeNetwork		0		0
+110	IncludePolicyUDF		0		0
+110	IncludeProviderUDF		0		0
+110	LastEndDate		0		0
+110	LastStartDate		0		0
+110	LastTapeDate		0		0
+110	ModDate		0		0
+110	ModUserID		0		0
+110	Name		0		0
+110	NetReevalFees		0		0
+110	NF10FileFormat		0		0
+110	NYAttorneyC81		0		0
+110	NYAttorneyC84		0		0
+110	NYAttorneyC8EOR		0		0
+110	NYAttorneyC8EORCover		0		0
+110	NYAttorneyC8Identifier		0		0
+110	NYAttorneyFormat		0		0
+110	NYBoardC81		0		0
+110	NYBoardC84		0		0
+110	NYBoardC8EOR		0		0
+110	NYBoardC8Identifier		0		0
+110	NYBoardFormat		0		0
+110	NYClaimantC81		0		0
+110	NYClaimantC84		0		0
+110	NYClaimantC8EOR		0		0
+110	NYClaimantC8EORCover		0		0
+110	NYClaimantC8Identifier		0		0
+110	NYClaimantFormat		0		0
+110	NYProviderC81		0		0
+110	NYProviderC84		0		0
+110	NYProviderC8EOR		0		0
+110	NYProviderC8Identifier		0		0
+110	NYProviderFormat		0		0
+110	OfficeNum		0		0
+110	PendUserGroup		0		0
+110	PrintC8Identifier		0		0
+110	PrintEORIdentifier		0		0
+110	PrintNF10Identifier		0		0
+110	PrintNF10ProvBillingAddr		0		0
+110	ReductionsPerEORProfile		0		0
+110	SetREVALPaidDateToPostDateDays		0		0
+110	SetZAPaidDateToPostDateDays		0		0
+110	SpecialProcessFlag		0		0
+110	SubmissionReasonCode		0		0
+110	TotalBillCount		0		0
+110	TotalCounter		0		0
+110	UpdateREVALBillControlToAccepted		0		0
+110	UpdateREVALPaidDateToPostDate		0		0
+110	UpdateZABillControltoAccepted		0		0
+110	UpdateZAPaidDateToPostDate		0		0
+110	UseExtendedLayout		0		0
+110	VendorContact		0		0
+110	VendorNum		0		0
+110	VendorPhone		0		0
+110	WFValidationFlag		0		0
+111	BillControlSeq		0		0
+111	BillControlTableCode		0		0
+111	Class		0		0
+111	EDIControlFlag		0		0
+111	EDIFileConfigSeq		0		0
+111	EDIFileConfigSiteCode		0		0
+111	EDIInputFileName		0		0
+111	EDIMapToolDesc		0		0
+111	EDIMapToolID		0		0
+111	EDIMapToolName		0		0
+111	EDIMapToolType		0		0
+111	EDIMultiFiles		0		0
+111	EDIObjectID		0		0
+111	EDIObjectSiteCode		0		0
+111	EDIOutputFileName		0		0
+111	EDIPartnerID		0		0
+111	EDIPortType		0		0
+111	EDIReportType		0		0
+111	EDISourceID		0		0
+111	EDIType		0		0
+111	FormProperties		0		0
+111	Jurisdiction		0		0
+111	LineSelectionQuery		0		0
+111	LZControlSeq		0		0
+111	LZControlTableCode		0		0
+111	MenuTitle		0		0
+111	PermitUndefinedRecIDs		0		0
+111	PortProperties		0		0
+111	ReportSelectionQuery		0		0
+111	SecurityLevel		0		0
+111	SelectionQuery		0		0
+111	SiteCode		0		0
+112	Adjuster		0		0
+112	AdmitDate		0		0
+112	BillableLines		0		0
+112	BillSeq		0		0
+112	BillSeqOrgRev		0		0
+112	CarrierSeqNew		0		0
+112	CheckNum		0		0
+112	ClientCode		0		0
+112	ClientTOB		0		0
+112	ConsultDate		0		0
+112	CreateUserID		0		0
+112	DischargeDate		0		0
+112	DocCtrlID		0		0
+112	DOI		0		0
+112	DOSFirst		0		0
+112	DOSLast		0		0
+112	DRG		0		0
+112	DueDate		0		0
+112	DupBillSeq		0		0
+112	DupClientCode		0		0
+112	EDIControlSeq		0		0
+112	EDIHistoryClaimSeq		0		0
+112	EDIHistoryInsurerSeq		0		0
+112	EDIHistoryProviderSeq		0		0
+112	EDITestIndicator		0		0
+112	EDIXmitBillSeq		0		1
+112	EDIXmitSeq		0		0
+112	ExternalID		0		0
+112	ForcePay		0		0
+112	GeoState		0		0
+112	ICDVersion		0		0
+112	Jurisdiction		0		0
+112	ManualReductionMode		0		0
+112	ModUserID		0		0
+112	PaidAmount		0		0
+112	PaidDate		0		0
+112	PatientAccount		0		0
+112	PatientStatus		0		0
+112	PmtAuth		0		0
+112	PostDate		0		0
+112	PPOContractID		0		0
+112	PPONetworkID		0		0
+112	PPONetworkJurisdictionInd		0		0
+112	PPONetworkJurisdictionInsurerSeq		0		0
+112	ProvInvoice		0		0
+112	ProvLicenseNum		0		0
+112	ProvSpecialty1		0		0
+112	ProvType		0		0
+112	RcvdBrDate		0		0
+112	RcvdDate		0		0
+112	RefProvName		0		0
+112	ReviewDate		0		0
+112	SubmitDate		0		0
+112	SubProductCode		0		0
+112	TOB		0		0
+112	TotalCharge		0		0
+112	UB92TOB		0		0
+112	WFQueueParameter1		0		0
+113	BillSeq		0		0
+113	ClientCode		0		0
+113	CreateDate		0		0
+113	CreatedByExternalUserName		0		0
+113	CreateUserID		0		0
+113	PendComment		0		0
+113	PendCommentSeq		0		0
+113	PendSeq		0		0
+114	ClaimSysSubset		0		0
+114	EffectiveDate		0		0
+114	InsurerSeq		0		0
+114	InsurerType		0		0
+114	Jurisdiction		0		0
+114	PolicySeq		0		0
+114	TerminationDate		0		0
+115	ClaimAdminClaimNum		0		0
+115	ClaimSeq		0		0
+115	ClaimSysSubset		0		0
+115	EffectiveDate		0		0
+115	ExternalPolicyNumber		0		0
+115	InsurerSeq		0		0
+115	InsurerType		0		0
+115	PolicyEffectiveDate		0		0
+115	SelfInsured		0		0
+115	TerminationDate		0		0
+115	UnitStatClaimID		0		0
+115	UnitStatPolicyID		0		0
+116	AAWP		0		0
+116	Awp0		0		0
+116	Awp1		0		0
+116	Awp2		0		0
+116	DEA		0		0
+116	Desicode		0		0
+116	EffectiveDt0		0		0
+116	EffectiveDt1		0		0
+116	EffectiveDt2		0		0
+116	Factor		0		0
+116	FDAEquivalence		0		0
+116	GAWP		0		0
+116	GenericDrug		0		0
+116	GPI		0		0
+116	GPPC		0		0
+116	Name1		0		0
+116	Name2		0		0
+116	Name3		0		0
+116	NDC		0		0
+116	NDCFormat		0		0
+116	Pkg		0		0
+116	RepackagedCode		0		0
+116	RestrictDrugs		0		0
+116	Rxotc		0		0
+116	Status		0		0
+116	Strength		0		0
+116	Unit		0		0
+116	UpdateDate		0		0
+117	Active		0		0
+117	CodeLevel		0		0
+117	CodeOrder		0		0
+117	Comment		0		0
+117	CreateDate		0		0
+117	CreateUserID		0		0
+117	CustomParameters		0		0
+117	Family		0		0
+117	GlobalPriority		0		0
+117	GroupCode		0		0
+117	GroupType		0		0
+117	LinkGroupFamily		0		0
+117	LinkGroupType		0		0
+117	ModDate		0		0
+117	ModUserID		0		0
+117	Revision		0		0
+117	ServiceCode		0		0
+117	ServiceCodeType		0		0
+117	SiteCode		0		0

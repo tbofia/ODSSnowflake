@@ -1,0 +1,3 @@
+0	Initial	FULL	true
+1	Incremental	INCR	false
+2	Snapshot	SNAP	true

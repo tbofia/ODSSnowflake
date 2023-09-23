@@ -1,0 +1,9 @@
+put file://C:\tfs\CSG\Enterprise\Database\OperationalDataStore\Snowflake\DecisionPoint\CI\SnowFlakeDatabase\Data\adm.Customer.txt @ACSODS_VLAB.adm.%Customer auto_compress=true overwrite=true; 
+put file://C:\tfs\CSG\Enterprise\Database\OperationalDataStore\Snowflake\DecisionPoint\CI\SnowFlakeDatabase\Data\adm.Data_Extract_Type.txt @ACSODS_VLAB.adm.%Data_Extract_Type auto_compress=true overwrite=true; 
+put file://C:\tfs\CSG\Enterprise\Database\OperationalDataStore\Snowflake\DecisionPoint\CI\SnowFlakeDatabase\Data\adm.Event.txt @ACSODS_VLAB.adm.%Event auto_compress=true overwrite=true; 
+put file://C:\tfs\CSG\Enterprise\Database\OperationalDataStore\Snowflake\DecisionPoint\CI\SnowFlakeDatabase\Data\adm.Posting_Group.txt @ACSODS_VLAB.adm.%Posting_Group auto_compress=true overwrite=true; 
+put file://C:\tfs\CSG\Enterprise\Database\OperationalDataStore\Snowflake\DecisionPoint\CI\SnowFlakeDatabase\Data\adm.Process.txt @ACSODS_VLAB.adm.%Process auto_compress=true overwrite=true; 
+put file://C:\tfs\CSG\Enterprise\Database\OperationalDataStore\Snowflake\DecisionPoint\CI\SnowFlakeDatabase\Data\adm.Process_Format_Files.txt @ACSODS_VLAB.adm.%Process_Format_Files auto_compress=true overwrite=true; 
+put file://C:\tfs\CSG\Enterprise\Database\OperationalDataStore\Snowflake\DecisionPoint\CI\SnowFlakeDatabase\Data\adm.Process_Primary_Key.txt @ACSODS_VLAB.adm.%Process_Primary_Key auto_compress=true overwrite=true; 
+put file://C:\tfs\CSG\Enterprise\Database\OperationalDataStore\Snowflake\DecisionPoint\CI\SnowFlakeDatabase\Data\adm.Product.txt @ACSODS_VLAB.adm.%Product auto_compress=true overwrite=true; 
+put file://C:\tfs\CSG\Enterprise\Database\OperationalDataStore\Snowflake\DecisionPoint\CI\SnowFlakeDatabase\Data\adm.Status_Code.txt @ACSODS_VLAB.adm.%Status_Code auto_compress=true overwrite=true; 

@@ -1,0 +1,150 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Provision the S3 buckets and roles for Snowflake service
+Parameters:
+  SnowflakeAccount:
+    Type: String
+    Default: mitchellcsg_dev
+    AllowedValues: 
+      - mitchellcsg_dev
+      - mitchellcsg_qa
+      - mitchellcsg_prod
+    Description: Account name for Snowflake
+  SnowflakeVpce:
+    Type: String
+    Default: com.amazonaws.vpce.us-east-1.vpce-svc-01f0a00f591864bde
+    AllowedValues: 
+      - com.amazonaws.vpce.us-east-1.vpce-svc-01f0a00f591864bde
+    Description: Enter the VPC Endpoint Snowflake is running on. This is provided by Snowflake.
+  Region: 
+    Type: String
+    Default: us-east-1
+    AllowedValues: 
+      - us-east-1
+    Description: Enter what region this will be in. Only us-east-1 is supported currently.
+  VpcId:
+    Type: String
+    Default: vpc-0ea21bbe1540bc906
+    AllowedValues: 
+      - vpc-0ea21bbe1540bc906
+      - vpc-0d2b55111a99119a9
+      - vpc-02ba9ac62fd1f121b
+    Description: Enter the VPC id that Snowflake is connecting to. This is in the AWS account the S3 bucket is in.
+  RouteTable:
+    Type: String
+    Default: rtb-0a9bacf0bf291acb3
+    AllowedValues: 
+      - rtb-0a9bacf0bf291acb3
+      - rtb-0bbda520fadb172b9
+      - rtb-03579cce8cc3b07ec
+    Description: Enter the route table for the vpc.
+  SubnetA:
+    Type: String
+    Default: subnet-06fcec2e59b849952
+    AllowedValues: 
+      - subnet-06fcec2e59b849952
+      - subnet-04159ea0feb863391
+      - subnet-01b320fd053eae694
+    Description: Private subnet az a.
+  SubnetB:
+    Type: String
+    Default: subnet-01d6dcf7b2a3bab7d
+    AllowedValues: 
+      - subnet-01d6dcf7b2a3bab7d
+      - subnet-02f625539b0bbacee
+      - subnet-036d0b35e570a5722
+    Description: Private subnet az b.
+  SubnetC:
+    Type: String
+    Default: subnet-014fd6f4be5efa6b3
+    AllowedValues: 
+      - subnet-014fd6f4be5efa6b3
+      - subnet-0a0a3a67c486f0c42
+      - subnet-03d40f324cedde93b
+    Description: Private subnet az c.
+  SubnetD:
+    Type: String
+    Default: subnet-071b155701fce6ca7
+    AllowedValues: 
+      - subnet-071b155701fce6ca7
+      - subnet-0492c5cc9d000c835
+      - subnet-049dd0f6b9ad7b023
+    Description: Private subnet az d.
+Resources:
+  Vpce:
+    Type: AWS::EC2::VPCEndpoint
+    Properties: 
+      SecurityGroupIds: 
+        - !Ref VpceSecurityGroup
+      ServiceName: !Ref 'SnowflakeVpce'
+      SubnetIds: 
+        - !Ref SubnetA
+        - !Ref SubnetB
+        - !Ref SubnetC
+        - !Ref SubnetD
+      VpcEndpointType: Interface
+      VpcId: !Ref 'VpcId'
+  VpceSecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties: 
+      GroupDescription: Test
+      GroupName: SnowflakePrivateLinkGroup
+      SecurityGroupEgress: 
+        - IpProtocol: tcp
+          FromPort: 80
+          ToPort: 80
+          CidrIp: 0.0.0.0/0
+        - IpProtocol: tcp
+          FromPort: 443
+          ToPort: 443
+          CidrIp: 0.0.0.0/0
+      SecurityGroupIngress: 
+        - IpProtocol: tcp
+          FromPort: 80
+          ToPort: 80
+          CidrIp: 0.0.0.0/0
+        - IpProtocol: tcp
+          FromPort: 443
+          ToPort: 443
+          CidrIp: 0.0.0.0/0
+      VpcId: !Ref 'VpcId'
+  VpcDns:
+    Type: AWS::Route53::HostedZone
+    Properties:
+      Name: !Sub '${SnowflakeAccount}.${Region}.privatelink.snowflakecomputing.com'
+      VPCs: 
+        - 
+          VPCId: !Ref 'VpcId'
+          VPCRegion: !Ref Region
+  # ==========================
+  # Currently doesn't look possible to do A record with Private Endpoint Interface
+  # ==========================
+  #VpceCname1:
+    #Type: AWS::Route53::RecordSet
+    #Properties:
+      #HostedZoneId: !Ref VpcDns
+      #Comment: Snowflake Endpoints
+      #Name: !Sub '${SnowflakeAccount}.${Region}.privatelink.snowflakecomputing.com'
+      #Type: A
+      #AliasTarget:
+        #HostedZoneId : !Ref VpcDns
+        #DNSName: !Select [1, !Split [ ':', !Select [ 0, !GetAtt Vpce.DnsEntries ] ] ]
+      #TTL: 300
+  VpceCname2:
+    Type: AWS::Route53::RecordSet
+    Properties: 
+      Comment: Snowflake Endpoints
+      HostedZoneId : !Ref VpcDns
+      Name: !Sub 'ocsp.${SnowflakeAccount}.${Region}.privatelink.snowflakecomputing.com'
+      ResourceRecords: 
+        - !Select [1, !Split [ ':', !Select [ 0, !GetAtt Vpce.DnsEntries ] ] ]
+      Type: CNAME
+      TTL: 300
+  VpcGatewayEndpoint:
+    Type: AWS::EC2::VPCEndpoint
+    Properties: 
+    RouteTableIds: 
+        - !Ref RouteTable
+      ServiceName: !Sub "com.amazonaws.${Region}.s3"
+      VpcEndpointType: Gateway
+      VpcId: !Ref 'VpcId'

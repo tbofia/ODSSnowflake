@@ -1,0 +1,7 @@
+A	Archive	Indicates Files are ready for archiving
+FI	Finished	Indicates Completion of PostingGroupAudit/ProcessAudit
+I	Inserted	Indicates Successfully loaded staging table data into target table Note: data is still not visible i.e. RowIsCurrent stiill 0
+L	Loaded	Indicates Successfully Bulk inserted from flat file to staging table for a process
+R	Reduced	Indicates Successfully filered Staging data by comparing with data in target tables
+S	Start	Indicates Start of PostingGroupAudit/ProcessAudit
+U	Unpartitioned Switched	Indicates Successfully switched unpartitioned table to final table partition

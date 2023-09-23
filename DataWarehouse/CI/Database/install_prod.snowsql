@@ -1,0 +1,4 @@
+select '['||current_date||' '||current_time||']: '||'Switch Role to DB_OPS';
+USE ROLE DB_OPS;
+
+!source install.snowsql;

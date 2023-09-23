@@ -1,0 +1,2 @@
+ALTER TASK ADM.ETL_Snowflake_Ods_Load SUSPEND; 
+ALTER TASK ADM.Task_ETL_Log_Errors SUSPEND; 

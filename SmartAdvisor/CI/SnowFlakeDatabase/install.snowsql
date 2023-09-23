@@ -1,0 +1,97 @@
+select '['||current_date||' '||current_time||']: '||'Creating database roles';
+
+!source UserRole.sql;
+
+select '['||current_date||' '||current_time||']: '||'Configuring Database Settings';
+
+!source database.sql;
+
+select '['||current_date||' '||current_time||']: '||'Creating schema';
+
+!source schema.sql;
+
+select '['||current_date||' '||current_time||']: '||'Creating User Defined Types';
+
+!source Types\Types.sql;
+
+select '['||current_date||' '||current_time||']: '||'Creating file formats';
+
+!source FormatFiles\formatfilestat.sql;
+
+select '['||current_date||' '||current_time||']: '||'Creating static stored procedures';
+
+!source StoredProcedures\spstat.sql;
+
+select '['||current_date||' '||current_time||']: '||'Creating static dev tables';
+
+!source Tables\tblstat.sql;
+
+select '['||current_date||' '||current_time||']: '||'Creating/Updating dynamic tables';
+
+!source Tables\tbldyn.sql;
+
+!set variable_substitution=false;
+
+select '['||current_date||' '||current_time||']: '||'Creating dynamic stored procedures';
+
+!source StoredProcedures\spdyn.sql;
+
+!set variable_substitution=true;
+
+select '['||current_date||' '||current_time||']: '||'Altering dynamic tables Creating Primary Keys';
+
+!source Tables\Dynamic\AlterStatements\AlterTableStatements.sql;
+
+select '['||current_date||' '||current_time||']: '||'Dropping all foreign keys';
+
+call ADM.DropConstraints('FOREIGN KEY');
+
+select '['||current_date||' '||current_time||']: '||'Creating foreign keys for dynamic table';
+
+!source ForeignKeys\fkdyn.sql;
+
+select '['||current_date||' '||current_time||']: '||'Creating foreign keys for static table';
+
+!source ForeignKeys\fkstat.sql;
+
+select '['||current_date||' '||current_time||']: '||'Altering dynamic tables Creating Cluster Keys';
+
+!source Tables\Dynamic\AlterStatements\AlterTableCreateClusterKey.sql;
+
+select '['||current_date||' '||current_time||']: '||'Creating dynamic functions';
+
+!source Functions\fndyn.sql;
+
+select '['||current_date||' '||current_time||']: '||'Creating static functions';
+
+!source Functions\fnstat.sql;
+
+select '['||current_date||' '||current_time||']: '||'Creating dynamic views';
+
+!source Views\vwdyn.sql;
+
+select '['||current_date||' '||current_time||']: '||'Creating static views';
+
+!source Views\vwstat.sql;
+
+select '['||current_date||' '||current_time||']: '||'Inserting Dev Data into stage';
+!source data\tbldata_put.sql;
+
+select '['||current_date||' '||current_time||']: '||'Inserting Dev Data into table';
+!source data\tbldata_copy.sql;
+
+select '['||current_date||' '||current_time||']: '||'Applying DML/DDL with dependencies across multiple db objects...';
+
+!source Update\depends.sql;
+
+select '['||current_date||' '||current_time||']: '||'Creating Tasks';
+
+!source Tasks\taskstat.sql;
+
+select '['||current_date||' '||current_time||']: '||'Alter Tasks Resume';
+
+!source Tasks\taskstat_resume.sql;
+
+select '['||current_date||' '||current_time||']: '||'Creating Version';
+
+!source Tables\AppVersion.sql;

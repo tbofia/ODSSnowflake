@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS adm.App_Version (
+	  App_Version_Id NUMBER(10,0) NOT NULL IDENTITY(1,1)
+	, App_Version VARCHAR(10) NULL
+	, App_Version_Date DATETIME NULL
+	, Product_Key VARCHAR(100) NULL
+	, PRIMARY KEY (APP_VERSION_ID)
+);
+

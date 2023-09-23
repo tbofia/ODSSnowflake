@@ -1,0 +1,2 @@
+DecisionPoint	Decision Point	dbo
+DemandManager	DemandManager	aw

@@ -1,0 +1,9 @@
+COPY INTO ACSODS_VLAB.adm.Customer FROM @ACSODS_VLAB.adm.%Customer FILES = ('adm.Customer.txt.gz') FILE_FORMAT = ( FORMAT_NAME = ADM.FORMAT_FILE_DEL_TAB ); 
+COPY INTO ACSODS_VLAB.adm.Data_Extract_Type FROM @ACSODS_VLAB.adm.%Data_Extract_Type FILES = ('adm.Data_Extract_Type.txt.gz') FILE_FORMAT = ( FORMAT_NAME = ADM.FORMAT_FILE_DEL_TAB ); 
+COPY INTO ACSODS_VLAB.adm.Event FROM @ACSODS_VLAB.adm.%Event FILES = ('adm.Event.txt.gz') FILE_FORMAT = ( FORMAT_NAME = ADM.FORMAT_FILE_DEL_TAB ); 
+COPY INTO ACSODS_VLAB.adm.Posting_Group FROM @ACSODS_VLAB.adm.%Posting_Group FILES = ('adm.Posting_Group.txt.gz') FILE_FORMAT = ( FORMAT_NAME = ADM.FORMAT_FILE_DEL_TAB ); 
+COPY INTO ACSODS_VLAB.adm.Process FROM @ACSODS_VLAB.adm.%Process FILES = ('adm.Process.txt.gz') FILE_FORMAT = ( FORMAT_NAME = ADM.FORMAT_FILE_DEL_TAB ); 
+COPY INTO ACSODS_VLAB.adm.Process_Format_Files FROM @ACSODS_VLAB.adm.%Process_Format_Files FILES = ('adm.Process_Format_Files.txt.gz') FILE_FORMAT = ( FORMAT_NAME = ADM.FORMAT_FILE_DEL_TAB ); 
+COPY INTO ACSODS_VLAB.adm.Process_Primary_Key FROM @ACSODS_VLAB.adm.%Process_Primary_Key FILES = ('adm.Process_Primary_Key.txt.gz') FILE_FORMAT = ( FORMAT_NAME = ADM.FORMAT_FILE_DEL_TAB ); 
+COPY INTO ACSODS_VLAB.adm.Product FROM @ACSODS_VLAB.adm.%Product FILES = ('adm.Product.txt.gz') FILE_FORMAT = ( FORMAT_NAME = ADM.FORMAT_FILE_DEL_TAB ); 
+COPY INTO ACSODS_VLAB.adm.Status_Code FROM @ACSODS_VLAB.adm.%Status_Code FILES = ('adm.Status_Code.txt.gz') FILE_FORMAT = ( FORMAT_NAME = ADM.FORMAT_FILE_DEL_TAB ); 

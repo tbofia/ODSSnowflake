@@ -1,0 +1,242 @@
+2020-11-30 05:22:57,770 (8732/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:645  - Initialized logging. Log file '../snowsql_rt.log_bootstrap', Namespaces: ['snowflake.cli', 'snowflake.connector', 'botocore', 'azure', '__main__', 'eventloop', 'sqlexecute']
+2020-11-30 05:22:57,770 (8732/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:664  - cacert?: C:\Users\tb101541\AppData\Local\Temp\1\_MEI158362\base_library.zip\cacert.pem, C:\Users\tb101541\AppData\Local\Temp\1\_MEI158362\base_library.zip\certifi\cacert.pem
+2020-11-30 05:22:57,770 (8732/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:664  - cacert?: C:\Users\tb101541\AppData\Local\Temp\1\_MEI158362\cacert.pem, C:\Users\tb101541\AppData\Local\Temp\1\_MEI158362\certifi\cacert.pem
+2020-11-30 05:22:57,771 (8732/MainThread) snowflake.cli.common.util_cli INFO       util_cli:673  - cacert.pem is set to REQUESTS_CA_BUNDLE: C:\Users\tb101541\AppData\Local\Temp\1\_MEI158362\certifi\cacert.pem
+2020-11-30 05:22:57,771 (8732/MainThread) __main__ DEBUG      bootstrap:346  - proxy_host:None, proxy_port: None, proxy_user: None, proxy_password:False
+2020-11-30 05:22:57,772 (8732/MainThread) __main__ INFO      bootstrap:348  - no autoupgrade option: False
+2020-11-30 05:22:57,772 (8732/MainThread) __main__ INFO      bootstrap:350  - version: None, ret_options: None
+2020-11-30 05:22:57,782 (8732/MainThread) __main__ DEBUG      bootstrap:738  - No deletion happened. The number of snowsql is still less than 5
+2020-11-30 05:22:57,793 (8732/MainThread) __main__ DEBUG      bootstrap:363  - can we upgrade?: True
+2020-11-30 05:22:57,793 (8732/MainThread) __main__ INFO      bootstrap:368  - auto upgrade without version
+2020-11-30 05:22:57,794 (8732/MainThread) __main__ DEBUG      bootstrap:892  - Checking Repository: https://sfc-repo.snowflakecomputing.com/snowsql/1.2/windows_x86_64/index.json
+2020-11-30 05:22:58,048 (8732/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:363  - cache directory: C:\Users\tb101541\AppData\Local\Snowflake\Caches
+2020-11-30 05:22:58,073 (8732/MainThread) snowflake.connector.ssl_wrap_socket DEBUG ssl_wrap_socket:399  - OCSP Mode: FAIL_OPEN, OCSP response cache file name: None
+2020-11-30 05:22:58,073 (8732/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:400  - ocsp_response_cache_uri: file://C:/Users/tb101541/AppData/Local/Snowflake/Caches/ocsp_response_cache.json
+2020-11-30 05:22:58,074 (8732/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:402  - OCSP_VALIDATION_CACHE size: 0
+2020-11-30 05:22:58,074 (8732/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:202  - OCSP response cache server is enabled: http://ocsp.snowflakecomputing.com/ocsp_response_cache.json
+2020-11-30 05:22:58,074 (8732/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:236  - OCSP dynamic cache server RETRY URL: None
+2020-11-30 05:22:58,085 (8732/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:532  - The cache is older than 1 day. Deleted the cache file: C:/Users/tb101541/AppData/Local/Snowflake/Caches/ocsp_response_cache.json
+2020-11-30 05:22:58,086 (8732/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:439  - Failed to locate OCSP response cache file. No worry. It will validate with OCSP server: C:/Users/tb101541/AppData/Local/Snowflake/Caches/ocsp_response_cache.json
+2020-11-30 05:22:58,086 (8732/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:924  - validating certificate: sfc-repo.snowflakecomputing.com
+2020-11-30 05:22:58,087 (8732/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:373  - # of certificates: 4
+2020-11-30 05:22:58,087 (8732/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:380  - subject: OrderedDict([('common_name', 'sfc-repo.snowflakecomputing.com')]), issuer: OrderedDict([('country_name', 'US'), ('organization_name', 'Amazon'), ('organizational_unit_name', 'Server CA 1B'), ('common_name', 'Amazon')])
+2020-11-30 05:22:58,088 (8732/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:380  - subject: OrderedDict([('country_name', 'US'), ('organization_name', 'Amazon'), ('organizational_unit_name', 'Server CA 1B'), ('common_name', 'Amazon')]), issuer: OrderedDict([('country_name', 'US'), ('organization_name', 'Amazon'), ('common_name', 'Amazon Root CA 1')])
+2020-11-30 05:22:58,088 (8732/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:380  - subject: OrderedDict([('country_name', 'US'), ('organization_name', 'Amazon'), ('common_name', 'Amazon Root CA 1')]), issuer: OrderedDict([('country_name', 'US'), ('state_or_province_name', 'Arizona'), ('locality_name', 'Scottsdale'), ('organization_name', 'Starfield Technologies, Inc.'), ('common_name', 'Starfield Services Root Certificate Authority - G2')])
+2020-11-30 05:22:58,089 (8732/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:380  - subject: OrderedDict([('country_name', 'US'), ('state_or_province_name', 'Arizona'), ('locality_name', 'Scottsdale'), ('organization_name', 'Starfield Technologies, Inc.'), ('common_name', 'Starfield Services Root Certificate Authority - G2')]), issuer: OrderedDict([('country_name', 'US'), ('organization_name', 'Starfield Technologies, Inc.'), ('organizational_unit_name', 'Starfield Class 2 Certification Authority')])
+2020-11-30 05:22:58,091 (8732/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:98   - reading certificate bundle: C:\Users\tb101541\AppData\Local\Temp\1\_MEI158362\certifi\cacert.pem
+2020-11-30 05:22:58,102 (8732/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:400  - not found issuer_der: OrderedDict([('country_name', 'US'), ('organization_name', 'Starfield Technologies, Inc.'), ('organizational_unit_name', 'Starfield Class 2 Certification Authority')])
+2020-11-30 05:22:58,102 (8732/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:582  - not hit cache for subject: OrderedDict([('common_name', 'sfc-repo.snowflakecomputing.com')])
+2020-11-30 05:22:58,102 (8732/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:264  - started downloading OCSP response cache file: http://ocsp.snowflakecomputing.com/ocsp_response_cache.json
+2020-11-30 05:22:58,504 (8732/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:195  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2025-05-12 23:58:59+00:00
+2020-11-30 05:22:58,506 (8732/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:195  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2023-06-11 20:40:26+00:00
+2020-11-30 05:22:58,506 (8732/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:195  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2023-06-11 20:44:21+00:00
+2020-11-30 05:22:58,508 (8732/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:195  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2021-12-14 07:00:00+00:00
+2020-11-30 05:22:58,509 (8732/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:195  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2025-05-12 23:58:59+00:00
+2020-11-30 05:22:58,513 (8732/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:195  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2025-05-12 23:58:59+00:00
+2020-11-30 05:22:58,532 (8732/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:195  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2021-09-17 17:07:00+00:00
+2020-11-30 05:22:58,533 (8732/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:195  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2021-09-17 17:27:43+00:00
+2020-11-30 05:22:58,534 (8732/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:195  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2021-07-24 01:48:25+00:00
+2020-11-30 05:22:58,536 (8732/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:195  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2021-07-24 02:08:27+00:00
+2020-11-30 05:22:58,537 (8732/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:195  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2021-07-24 01:48:25+00:00
+2020-11-30 05:22:58,538 (8732/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:195  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2021-07-24 02:08:27+00:00
+2020-11-30 05:22:58,539 (8732/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:195  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2021-07-24 02:08:27+00:00
+2020-11-30 05:22:58,540 (8732/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:195  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2021-07-24 02:08:27+00:00
+2020-11-30 05:22:58,541 (8732/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:195  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2021-07-24 02:08:27+00:00
+2020-11-30 05:22:58,542 (8732/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:195  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2021-07-24 02:08:27+00:00
+2020-11-30 05:22:58,544 (8732/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:195  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2021-07-24 01:48:25+00:00
+2020-11-30 05:22:58,545 (8732/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:195  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2021-07-24 02:08:27+00:00
+2020-11-30 05:22:58,546 (8732/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:195  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2021-07-24 01:48:25+00:00
+2020-11-30 05:22:58,546 (8732/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:289  - ended downloading OCSP response cache file. elapsed time: 0.44353652000427246s
+2020-11-30 05:22:58,547 (8732/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:248  - downloaded OCSP response cache file from http://ocsp.snowflakecomputing.com/ocsp_response_cache.json
+2020-11-30 05:22:58,547 (8732/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:249  - # of certificates: 143
+2020-11-30 05:22:58,548 (8732/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:582  - not hit cache for subject: OrderedDict([('common_name', 'sfc-repo.snowflakecomputing.com')])
+2020-11-30 05:22:58,548 (8732/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:1067 - getting OCSP response from CA's OCSP server
+2020-11-30 05:22:58,550 (8732/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:1324 - url: http://ocsp.sca1b.amazontrust.com
+2020-11-30 05:22:58,759 (8732/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:1344 - OCSP response was successfully returned from OCSP server.
+2020-11-30 05:22:58,759 (8732/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:277  - Certificate is NOT attached in Basic OCSP Response. Using issuer's certificate
+2020-11-30 05:22:58,760 (8732/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:283  - Verifying the OCSP response is signed by the issuer.
+2020-11-30 05:22:58,792 (8732/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:195  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2023-06-11 20:40:26+00:00
+2020-11-30 05:22:58,792 (8732/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:557  - hit cache for subject: OrderedDict([('country_name', 'US'), ('organization_name', 'Amazon'), ('organizational_unit_name', 'Server CA 1B'), ('common_name', 'Amazon')])
+2020-11-30 05:22:58,794 (8732/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:1080 - using OCSP response cache
+2020-11-30 05:22:58,795 (8732/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:249  - Certificate is attached in Basic OCSP Response
+2020-11-30 05:22:58,795 (8732/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:251  - Verifying the attached certificate is signed by the issuer
+2020-11-30 05:22:58,795 (8732/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:255  - Valid Not After: 2023-06-11 20:40:26+00:00
+2020-11-30 05:22:58,796 (8732/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:283  - Verifying the OCSP response is signed by the issuer.
+2020-11-30 05:22:58,799 (8732/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:195  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2023-06-11 20:44:21+00:00
+2020-11-30 05:22:58,799 (8732/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:557  - hit cache for subject: OrderedDict([('country_name', 'US'), ('organization_name', 'Amazon'), ('common_name', 'Amazon Root CA 1')])
+2020-11-30 05:22:58,801 (8732/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:1080 - using OCSP response cache
+2020-11-30 05:22:58,801 (8732/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:249  - Certificate is attached in Basic OCSP Response
+2020-11-30 05:22:58,801 (8732/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:251  - Verifying the attached certificate is signed by the issuer
+2020-11-30 05:22:58,801 (8732/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:255  - Valid Not After: 2023-06-11 20:44:21+00:00
+2020-11-30 05:22:58,803 (8732/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:283  - Verifying the OCSP response is signed by the issuer.
+2020-11-30 05:22:58,806 (8732/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:195  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2021-12-14 07:00:00+00:00
+2020-11-30 05:22:58,807 (8732/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:557  - hit cache for subject: OrderedDict([('country_name', 'US'), ('state_or_province_name', 'Arizona'), ('locality_name', 'Scottsdale'), ('organization_name', 'Starfield Technologies, Inc.'), ('common_name', 'Starfield Services Root Certificate Authority - G2')])
+2020-11-30 05:22:58,807 (8732/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:1080 - using OCSP response cache
+2020-11-30 05:22:58,808 (8732/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:249  - Certificate is attached in Basic OCSP Response
+2020-11-30 05:22:58,809 (8732/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:251  - Verifying the attached certificate is signed by the issuer
+2020-11-30 05:22:58,809 (8732/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:255  - Valid Not After: 2021-12-14 07:00:00+00:00
+2020-11-30 05:22:58,810 (8732/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:283  - Verifying the OCSP response is signed by the issuer.
+2020-11-30 05:22:58,813 (8732/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:490  - writing OCSP response cache file
+2020-11-30 05:22:58,813 (8732/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:1459 - encoding OCSP response cache to JSON
+2020-11-30 05:22:58,828 (8732/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:967  - ok
+2020-11-30 05:22:58,958 (8732/MainThread) __main__ DEBUG      bootstrap:908  - List Objects: [
+    "snowsql-1.2.10-windows_x86_64.zip",
+    "snowsql-1.2.9-windows_x86_64.zip",
+    "snowsql-1.2.8-windows_x86_64.zip",
+    "snowsql-1.2.7-windows_x86_64.zip",
+    "snowsql-1.2.5-windows_x86_64.zip",
+    "snowsql-1.2.4-windows_x86_64.zip",
+    "snowsql-1.2.3-windows_x86_64.zip",
+    "snowsql-1.2.2-windows_x86_64.zip",
+    "snowsql-1.2.1-windows_x86_64.zip",
+    "snowsql-1.2.0-windows_x86_64.zip"
+]
+2020-11-30 05:22:58,959 (8732/MainThread) __main__ DEBUG      bootstrap:931  - extracting from sfc-repo bucket
+2020-11-30 05:22:58,959 (8732/MainThread) __main__ DEBUG      bootstrap:794  - Available snowsql files: ['1.2/windows_x86_64/snowsql-1.2.10-windows_x86_64.zip', '1.2/windows_x86_64/snowsql-1.2.9-windows_x86_64.zip', '1.2/windows_x86_64/snowsql-1.2.8-windows_x86_64.zip', '1.2/windows_x86_64/snowsql-1.2.7-windows_x86_64.zip', '1.2/windows_x86_64/snowsql-1.2.5-windows_x86_64.zip', '1.2/windows_x86_64/snowsql-1.2.4-windows_x86_64.zip', '1.2/windows_x86_64/snowsql-1.2.3-windows_x86_64.zip', '1.2/windows_x86_64/snowsql-1.2.2-windows_x86_64.zip', '1.2/windows_x86_64/snowsql-1.2.1-windows_x86_64.zip', '1.2/windows_x86_64/snowsql-1.2.0-windows_x86_64.zip']
+2020-11-30 05:22:58,959 (8732/MainThread) __main__ DEBUG      bootstrap:795  - snowsql file: 1.2/windows_x86_64/snowsql-1.2.10-windows_x86_64.zip
+2020-11-30 05:22:58,959 (8732/MainThread) __main__ DEBUG      bootstrap:621  - Latest version: 1.2.10 in remote
+2020-11-30 05:22:58,962 (8732/MainThread) __main__ INFO      bootstrap:245  - Recorded autoupgrade status
+2020-11-30 05:22:58,962 (8732/MainThread) __main__ DEBUG      bootstrap:814  - Running C:\Users\tb101541\.snowsql\1.2.10\snowsql.exe
+2020-11-30 05:39:26,225 (14212/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:645  - Initialized logging. Log file '../snowsql_rt.log_bootstrap', Namespaces: ['snowflake.cli', 'snowflake.connector', 'botocore', 'azure', '__main__', 'eventloop', 'sqlexecute']
+2020-11-30 05:39:26,226 (14212/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:664  - cacert?: C:\Users\tb101541\AppData\Local\Temp\1\_MEI34642\base_library.zip\cacert.pem, C:\Users\tb101541\AppData\Local\Temp\1\_MEI34642\base_library.zip\certifi\cacert.pem
+2020-11-30 05:39:26,227 (14212/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:664  - cacert?: C:\Users\tb101541\AppData\Local\Temp\1\_MEI34642\cacert.pem, C:\Users\tb101541\AppData\Local\Temp\1\_MEI34642\certifi\cacert.pem
+2020-11-30 05:39:26,227 (14212/MainThread) snowflake.cli.common.util_cli INFO       util_cli:673  - cacert.pem is set to REQUESTS_CA_BUNDLE: C:\Users\tb101541\AppData\Local\Temp\1\_MEI34642\certifi\cacert.pem
+2020-11-30 05:39:26,228 (14212/MainThread) __main__ DEBUG      bootstrap:346  - proxy_host:None, proxy_port: None, proxy_user: None, proxy_password:False
+2020-11-30 05:39:26,228 (14212/MainThread) __main__ INFO      bootstrap:348  - no autoupgrade option: False
+2020-11-30 05:39:26,228 (14212/MainThread) __main__ INFO      bootstrap:350  - version: None, ret_options: None
+2020-11-30 05:39:26,229 (14212/MainThread) __main__ DEBUG      bootstrap:738  - No deletion happened. The number of snowsql is still less than 5
+2020-11-30 05:39:26,231 (14212/MainThread) __main__ DEBUG      bootstrap:363  - can we upgrade?: False
+2020-11-30 05:39:26,231 (14212/MainThread) __main__ INFO      bootstrap:371  - skipping auto upgrade
+2020-11-30 05:39:26,232 (14212/MainThread) __main__ DEBUG      bootstrap:814  - Running C:\Users\tb101541\.snowsql\1.2.10\snowsql.exe
+2020-12-01 04:30:29,820 (26764/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:645  - Initialized logging. Log file '../snowsql_rt.log_bootstrap', Namespaces: ['snowflake.cli', 'snowflake.connector', 'botocore', 'azure', '__main__', 'eventloop', 'sqlexecute']
+2020-12-01 04:30:29,828 (26764/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:664  - cacert?: C:\Users\tb101541\AppData\Local\Temp\1\_MEI238922\base_library.zip\cacert.pem, C:\Users\tb101541\AppData\Local\Temp\1\_MEI238922\base_library.zip\certifi\cacert.pem
+2020-12-01 04:30:29,828 (26764/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:664  - cacert?: C:\Users\tb101541\AppData\Local\Temp\1\_MEI238922\cacert.pem, C:\Users\tb101541\AppData\Local\Temp\1\_MEI238922\certifi\cacert.pem
+2020-12-01 04:30:29,829 (26764/MainThread) snowflake.cli.common.util_cli INFO       util_cli:673  - cacert.pem is set to REQUESTS_CA_BUNDLE: C:\Users\tb101541\AppData\Local\Temp\1\_MEI238922\certifi\cacert.pem
+2020-12-01 04:30:29,829 (26764/MainThread) __main__ DEBUG      bootstrap:346  - proxy_host:None, proxy_port: None, proxy_user: None, proxy_password:False
+2020-12-01 04:30:29,830 (26764/MainThread) __main__ INFO      bootstrap:348  - no autoupgrade option: False
+2020-12-01 04:30:29,830 (26764/MainThread) __main__ INFO      bootstrap:350  - version: None, ret_options: None
+2020-12-01 04:30:29,841 (26764/MainThread) __main__ DEBUG      bootstrap:738  - No deletion happened. The number of snowsql is still less than 5
+2020-12-01 04:30:29,843 (26764/MainThread) __main__ DEBUG      bootstrap:363  - can we upgrade?: True
+2020-12-01 04:30:29,843 (26764/MainThread) __main__ INFO      bootstrap:368  - auto upgrade without version
+2020-12-01 04:30:29,843 (26764/MainThread) __main__ DEBUG      bootstrap:892  - Checking Repository: https://sfc-repo.snowflakecomputing.com/snowsql/1.2/windows_x86_64/index.json
+2020-12-01 04:30:30,195 (26764/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:363  - cache directory: C:\Users\tb101541\AppData\Local\Snowflake\Caches
+2020-12-01 04:30:30,227 (26764/MainThread) snowflake.connector.ssl_wrap_socket DEBUG ssl_wrap_socket:399  - OCSP Mode: FAIL_OPEN, OCSP response cache file name: None
+2020-12-01 04:30:30,228 (26764/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:400  - ocsp_response_cache_uri: file://C:/Users/tb101541/AppData/Local/Snowflake/Caches/ocsp_response_cache.json
+2020-12-01 04:30:30,228 (26764/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:402  - OCSP_VALIDATION_CACHE size: 0
+2020-12-01 04:30:30,228 (26764/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:202  - OCSP response cache server is enabled: http://ocsp.snowflakecomputing.com/ocsp_response_cache.json
+2020-12-01 04:30:30,228 (26764/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:236  - OCSP dynamic cache server RETRY URL: None
+2020-12-01 04:30:30,231 (26764/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:532  - The cache is older than 1 day. Deleted the cache file: C:/Users/tb101541/AppData/Local/Snowflake/Caches/ocsp_response_cache.json
+2020-12-01 04:30:30,232 (26764/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:439  - Failed to locate OCSP response cache file. No worry. It will validate with OCSP server: C:/Users/tb101541/AppData/Local/Snowflake/Caches/ocsp_response_cache.json
+2020-12-01 04:30:30,232 (26764/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:924  - validating certificate: sfc-repo.snowflakecomputing.com
+2020-12-01 04:30:30,233 (26764/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:373  - # of certificates: 4
+2020-12-01 04:30:30,234 (26764/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:380  - subject: OrderedDict([('common_name', 'sfc-repo.snowflakecomputing.com')]), issuer: OrderedDict([('country_name', 'US'), ('organization_name', 'Amazon'), ('organizational_unit_name', 'Server CA 1B'), ('common_name', 'Amazon')])
+2020-12-01 04:30:30,234 (26764/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:380  - subject: OrderedDict([('country_name', 'US'), ('organization_name', 'Amazon'), ('organizational_unit_name', 'Server CA 1B'), ('common_name', 'Amazon')]), issuer: OrderedDict([('country_name', 'US'), ('organization_name', 'Amazon'), ('common_name', 'Amazon Root CA 1')])
+2020-12-01 04:30:30,235 (26764/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:380  - subject: OrderedDict([('country_name', 'US'), ('organization_name', 'Amazon'), ('common_name', 'Amazon Root CA 1')]), issuer: OrderedDict([('country_name', 'US'), ('state_or_province_name', 'Arizona'), ('locality_name', 'Scottsdale'), ('organization_name', 'Starfield Technologies, Inc.'), ('common_name', 'Starfield Services Root Certificate Authority - G2')])
+2020-12-01 04:30:30,236 (26764/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:380  - subject: OrderedDict([('country_name', 'US'), ('state_or_province_name', 'Arizona'), ('locality_name', 'Scottsdale'), ('organization_name', 'Starfield Technologies, Inc.'), ('common_name', 'Starfield Services Root Certificate Authority - G2')]), issuer: OrderedDict([('country_name', 'US'), ('organization_name', 'Starfield Technologies, Inc.'), ('organizational_unit_name', 'Starfield Class 2 Certification Authority')])
+2020-12-01 04:30:30,239 (26764/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:98   - reading certificate bundle: C:\Users\tb101541\AppData\Local\Temp\1\_MEI238922\certifi\cacert.pem
+2020-12-01 04:30:30,253 (26764/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:400  - not found issuer_der: OrderedDict([('country_name', 'US'), ('organization_name', 'Starfield Technologies, Inc.'), ('organizational_unit_name', 'Starfield Class 2 Certification Authority')])
+2020-12-01 04:30:30,254 (26764/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:582  - not hit cache for subject: OrderedDict([('common_name', 'sfc-repo.snowflakecomputing.com')])
+2020-12-01 04:30:30,255 (26764/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:264  - started downloading OCSP response cache file: http://ocsp.snowflakecomputing.com/ocsp_response_cache.json
+2020-12-01 04:30:30,645 (26764/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:195  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2025-05-12 23:58:59+00:00
+2020-12-01 04:30:30,648 (26764/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:195  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2023-06-11 20:40:26+00:00
+2020-12-01 04:30:30,649 (26764/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:195  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2023-06-11 20:44:21+00:00
+2020-12-01 04:30:30,651 (26764/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:195  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2021-12-14 07:00:00+00:00
+2020-12-01 04:30:30,654 (26764/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:195  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2025-05-12 23:58:59+00:00
+2020-12-01 04:30:30,658 (26764/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:195  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2025-05-12 23:58:59+00:00
+2020-12-01 04:30:30,682 (26764/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:195  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2021-09-17 17:07:00+00:00
+2020-12-01 04:30:30,684 (26764/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:195  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2021-09-17 17:27:43+00:00
+2020-12-01 04:30:30,685 (26764/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:195  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2021-07-24 01:48:25+00:00
+2020-12-01 04:30:30,687 (26764/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:195  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2021-07-24 02:08:27+00:00
+2020-12-01 04:30:30,689 (26764/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:195  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2021-07-24 01:48:25+00:00
+2020-12-01 04:30:30,691 (26764/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:195  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2021-07-24 02:08:27+00:00
+2020-12-01 04:30:30,692 (26764/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:195  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2021-07-24 02:08:27+00:00
+2020-12-01 04:30:30,693 (26764/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:195  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2021-07-24 02:08:27+00:00
+2020-12-01 04:30:30,695 (26764/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:195  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2021-07-24 02:08:27+00:00
+2020-12-01 04:30:30,696 (26764/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:195  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2021-07-24 02:08:27+00:00
+2020-12-01 04:30:30,698 (26764/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:195  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2021-07-24 01:48:25+00:00
+2020-12-01 04:30:30,699 (26764/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:195  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2021-07-24 02:08:27+00:00
+2020-12-01 04:30:30,701 (26764/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:195  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2021-07-24 01:48:25+00:00
+2020-12-01 04:30:30,702 (26764/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:289  - ended downloading OCSP response cache file. elapsed time: 0.4467158317565918s
+2020-12-01 04:30:30,702 (26764/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:248  - downloaded OCSP response cache file from http://ocsp.snowflakecomputing.com/ocsp_response_cache.json
+2020-12-01 04:30:30,703 (26764/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:249  - # of certificates: 143
+2020-12-01 04:30:30,703 (26764/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:582  - not hit cache for subject: OrderedDict([('common_name', 'sfc-repo.snowflakecomputing.com')])
+2020-12-01 04:30:30,704 (26764/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:1067 - getting OCSP response from CA's OCSP server
+2020-12-01 04:30:30,706 (26764/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:1324 - url: http://ocsp.sca1b.amazontrust.com
+2020-12-01 04:30:30,889 (26764/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:1344 - OCSP response was successfully returned from OCSP server.
+2020-12-01 04:30:30,890 (26764/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:277  - Certificate is NOT attached in Basic OCSP Response. Using issuer's certificate
+2020-12-01 04:30:30,890 (26764/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:283  - Verifying the OCSP response is signed by the issuer.
+2020-12-01 04:30:30,989 (26764/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:195  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2023-06-11 20:40:26+00:00
+2020-12-01 04:30:30,990 (26764/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:557  - hit cache for subject: OrderedDict([('country_name', 'US'), ('organization_name', 'Amazon'), ('organizational_unit_name', 'Server CA 1B'), ('common_name', 'Amazon')])
+2020-12-01 04:30:30,991 (26764/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:1080 - using OCSP response cache
+2020-12-01 04:30:30,992 (26764/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:249  - Certificate is attached in Basic OCSP Response
+2020-12-01 04:30:30,992 (26764/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:251  - Verifying the attached certificate is signed by the issuer
+2020-12-01 04:30:30,993 (26764/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:255  - Valid Not After: 2023-06-11 20:40:26+00:00
+2020-12-01 04:30:30,995 (26764/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:283  - Verifying the OCSP response is signed by the issuer.
+2020-12-01 04:30:30,999 (26764/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:195  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2023-06-11 20:44:21+00:00
+2020-12-01 04:30:31,000 (26764/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:557  - hit cache for subject: OrderedDict([('country_name', 'US'), ('organization_name', 'Amazon'), ('common_name', 'Amazon Root CA 1')])
+2020-12-01 04:30:31,001 (26764/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:1080 - using OCSP response cache
+2020-12-01 04:30:31,003 (26764/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:249  - Certificate is attached in Basic OCSP Response
+2020-12-01 04:30:31,003 (26764/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:251  - Verifying the attached certificate is signed by the issuer
+2020-12-01 04:30:31,003 (26764/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:255  - Valid Not After: 2023-06-11 20:44:21+00:00
+2020-12-01 04:30:31,005 (26764/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:283  - Verifying the OCSP response is signed by the issuer.
+2020-12-01 04:30:31,009 (26764/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:195  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2021-12-14 07:00:00+00:00
+2020-12-01 04:30:31,010 (26764/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:557  - hit cache for subject: OrderedDict([('country_name', 'US'), ('state_or_province_name', 'Arizona'), ('locality_name', 'Scottsdale'), ('organization_name', 'Starfield Technologies, Inc.'), ('common_name', 'Starfield Services Root Certificate Authority - G2')])
+2020-12-01 04:30:31,011 (26764/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:1080 - using OCSP response cache
+2020-12-01 04:30:31,013 (26764/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:249  - Certificate is attached in Basic OCSP Response
+2020-12-01 04:30:31,013 (26764/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:251  - Verifying the attached certificate is signed by the issuer
+2020-12-01 04:30:31,013 (26764/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:255  - Valid Not After: 2021-12-14 07:00:00+00:00
+2020-12-01 04:30:31,015 (26764/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:283  - Verifying the OCSP response is signed by the issuer.
+2020-12-01 04:30:31,018 (26764/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:490  - writing OCSP response cache file
+2020-12-01 04:30:31,018 (26764/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:1459 - encoding OCSP response cache to JSON
+2020-12-01 04:30:31,057 (26764/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:967  - ok
+2020-12-01 04:30:31,268 (26764/MainThread) __main__ DEBUG      bootstrap:908  - List Objects: [
+    "snowsql-1.2.10-windows_x86_64.zip",
+    "snowsql-1.2.9-windows_x86_64.zip",
+    "snowsql-1.2.8-windows_x86_64.zip",
+    "snowsql-1.2.7-windows_x86_64.zip",
+    "snowsql-1.2.5-windows_x86_64.zip",
+    "snowsql-1.2.4-windows_x86_64.zip",
+    "snowsql-1.2.3-windows_x86_64.zip",
+    "snowsql-1.2.2-windows_x86_64.zip",
+    "snowsql-1.2.1-windows_x86_64.zip",
+    "snowsql-1.2.0-windows_x86_64.zip"
+]
+2020-12-01 04:30:31,269 (26764/MainThread) __main__ DEBUG      bootstrap:931  - extracting from sfc-repo bucket
+2020-12-01 04:30:31,269 (26764/MainThread) __main__ DEBUG      bootstrap:794  - Available snowsql files: ['1.2/windows_x86_64/snowsql-1.2.10-windows_x86_64.zip', '1.2/windows_x86_64/snowsql-1.2.9-windows_x86_64.zip', '1.2/windows_x86_64/snowsql-1.2.8-windows_x86_64.zip', '1.2/windows_x86_64/snowsql-1.2.7-windows_x86_64.zip', '1.2/windows_x86_64/snowsql-1.2.5-windows_x86_64.zip', '1.2/windows_x86_64/snowsql-1.2.4-windows_x86_64.zip', '1.2/windows_x86_64/snowsql-1.2.3-windows_x86_64.zip', '1.2/windows_x86_64/snowsql-1.2.2-windows_x86_64.zip', '1.2/windows_x86_64/snowsql-1.2.1-windows_x86_64.zip', '1.2/windows_x86_64/snowsql-1.2.0-windows_x86_64.zip']
+2020-12-01 04:30:31,270 (26764/MainThread) __main__ DEBUG      bootstrap:795  - snowsql file: 1.2/windows_x86_64/snowsql-1.2.10-windows_x86_64.zip
+2020-12-01 04:30:31,270 (26764/MainThread) __main__ DEBUG      bootstrap:621  - Latest version: 1.2.10 in remote
+2020-12-01 04:30:31,272 (26764/MainThread) __main__ INFO      bootstrap:245  - Recorded autoupgrade status
+2020-12-01 04:30:31,273 (26764/MainThread) __main__ DEBUG      bootstrap:814  - Running C:\Users\tb101541\.snowsql\1.2.10\snowsql.exe
+2020-12-01 04:39:17,044 (24528/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:645  - Initialized logging. Log file '../snowsql_rt.log_bootstrap', Namespaces: ['snowflake.cli', 'snowflake.connector', 'botocore', 'azure', '__main__', 'eventloop', 'sqlexecute']
+2020-12-01 04:39:17,044 (24528/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:664  - cacert?: C:\Users\tb101541\AppData\Local\Temp\1\_MEI204242\base_library.zip\cacert.pem, C:\Users\tb101541\AppData\Local\Temp\1\_MEI204242\base_library.zip\certifi\cacert.pem
+2020-12-01 04:39:17,045 (24528/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:664  - cacert?: C:\Users\tb101541\AppData\Local\Temp\1\_MEI204242\cacert.pem, C:\Users\tb101541\AppData\Local\Temp\1\_MEI204242\certifi\cacert.pem
+2020-12-01 04:39:17,045 (24528/MainThread) snowflake.cli.common.util_cli INFO       util_cli:673  - cacert.pem is set to REQUESTS_CA_BUNDLE: C:\Users\tb101541\AppData\Local\Temp\1\_MEI204242\certifi\cacert.pem
+2020-12-01 04:39:17,046 (24528/MainThread) __main__ DEBUG      bootstrap:346  - proxy_host:None, proxy_port: None, proxy_user: None, proxy_password:False
+2020-12-01 04:39:17,046 (24528/MainThread) __main__ INFO      bootstrap:348  - no autoupgrade option: False
+2020-12-01 04:39:17,046 (24528/MainThread) __main__ INFO      bootstrap:350  - version: None, ret_options: None
+2020-12-01 04:39:17,048 (24528/MainThread) __main__ DEBUG      bootstrap:738  - No deletion happened. The number of snowsql is still less than 5
+2020-12-01 04:39:17,050 (24528/MainThread) __main__ DEBUG      bootstrap:363  - can we upgrade?: False
+2020-12-01 04:39:17,050 (24528/MainThread) __main__ INFO      bootstrap:371  - skipping auto upgrade
+2020-12-01 04:39:17,051 (24528/MainThread) __main__ DEBUG      bootstrap:814  - Running C:\Users\tb101541\.snowsql\1.2.10\snowsql.exe
+2020-12-01 04:45:58,250 (12752/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:645  - Initialized logging. Log file '../snowsql_rt.log_bootstrap', Namespaces: ['snowflake.cli', 'snowflake.connector', 'botocore', 'azure', '__main__', 'eventloop', 'sqlexecute']
+2020-12-01 04:45:58,251 (12752/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:664  - cacert?: C:\Users\tb101541\AppData\Local\Temp\1\_MEI108842\base_library.zip\cacert.pem, C:\Users\tb101541\AppData\Local\Temp\1\_MEI108842\base_library.zip\certifi\cacert.pem
+2020-12-01 04:45:58,251 (12752/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:664  - cacert?: C:\Users\tb101541\AppData\Local\Temp\1\_MEI108842\cacert.pem, C:\Users\tb101541\AppData\Local\Temp\1\_MEI108842\certifi\cacert.pem
+2020-12-01 04:45:58,252 (12752/MainThread) snowflake.cli.common.util_cli INFO       util_cli:673  - cacert.pem is set to REQUESTS_CA_BUNDLE: C:\Users\tb101541\AppData\Local\Temp\1\_MEI108842\certifi\cacert.pem
+2020-12-01 04:45:58,253 (12752/MainThread) __main__ DEBUG      bootstrap:346  - proxy_host:None, proxy_port: None, proxy_user: None, proxy_password:False
+2020-12-01 04:45:58,254 (12752/MainThread) __main__ INFO      bootstrap:348  - no autoupgrade option: False
+2020-12-01 04:45:58,254 (12752/MainThread) __main__ INFO      bootstrap:350  - version: None, ret_options: None
+2020-12-01 04:45:58,301 (12752/MainThread) __main__ DEBUG      bootstrap:738  - No deletion happened. The number of snowsql is still less than 5
+2020-12-01 04:45:58,305 (12752/MainThread) __main__ DEBUG      bootstrap:363  - can we upgrade?: False
+2020-12-01 04:45:58,305 (12752/MainThread) __main__ INFO      bootstrap:371  - skipping auto upgrade
+2020-12-01 04:45:58,307 (12752/MainThread) __main__ DEBUG      bootstrap:814  - Running C:\Users\tb101541\.snowsql\1.2.10\snowsql.exe
+2020-12-01 05:07:00,198 (28572/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:645  - Initialized logging. Log file '../snowsql_rt.log_bootstrap', Namespaces: ['snowflake.cli', 'snowflake.connector', 'botocore', 'azure', '__main__', 'eventloop', 'sqlexecute']
+2020-12-01 05:07:00,199 (28572/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:664  - cacert?: C:\Users\tb101541\AppData\Local\Temp\1\_MEI230962\base_library.zip\cacert.pem, C:\Users\tb101541\AppData\Local\Temp\1\_MEI230962\base_library.zip\certifi\cacert.pem
+2020-12-01 05:07:00,199 (28572/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:664  - cacert?: C:\Users\tb101541\AppData\Local\Temp\1\_MEI230962\cacert.pem, C:\Users\tb101541\AppData\Local\Temp\1\_MEI230962\certifi\cacert.pem
+2020-12-01 05:07:00,200 (28572/MainThread) snowflake.cli.common.util_cli INFO       util_cli:673  - cacert.pem is set to REQUESTS_CA_BUNDLE: C:\Users\tb101541\AppData\Local\Temp\1\_MEI230962\certifi\cacert.pem
+2020-12-01 05:07:00,200 (28572/MainThread) __main__ DEBUG      bootstrap:346  - proxy_host:None, proxy_port: None, proxy_user: None, proxy_password:False
+2020-12-01 05:07:00,201 (28572/MainThread) __main__ INFO      bootstrap:348  - no autoupgrade option: False
+2020-12-01 05:07:00,201 (28572/MainThread) __main__ INFO      bootstrap:350  - version: None, ret_options: None
+2020-12-01 05:07:00,202 (28572/MainThread) __main__ DEBUG      bootstrap:738  - No deletion happened. The number of snowsql is still less than 5
+2020-12-01 05:07:00,203 (28572/MainThread) __main__ DEBUG      bootstrap:363  - can we upgrade?: False
+2020-12-01 05:07:00,204 (28572/MainThread) __main__ INFO      bootstrap:371  - skipping auto upgrade
+2020-12-01 05:07:00,204 (28572/MainThread) __main__ DEBUG      bootstrap:814  - Running C:\Users\tb101541\.snowsql\1.2.10\snowsql.exe

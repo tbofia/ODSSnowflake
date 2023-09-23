@@ -1,0 +1,9 @@
+put file://C:\TFS\CSG\Enterprise\Database\OperationalDataStore\Snowflake\SmartAdvisor\CI\SnowFlakeDatabase\Data\adm.Customer.txt @WCSODS_FK.adm.%Customer auto_compress=true overwrite=true; 
+put file://C:\TFS\CSG\Enterprise\Database\OperationalDataStore\Snowflake\SmartAdvisor\CI\SnowFlakeDatabase\Data\adm.Data_Extract_Type.txt @WCSODS_FK.adm.%Data_Extract_Type auto_compress=true overwrite=true; 
+put file://C:\TFS\CSG\Enterprise\Database\OperationalDataStore\Snowflake\SmartAdvisor\CI\SnowFlakeDatabase\Data\adm.Event.txt @WCSODS_FK.adm.%Event auto_compress=true overwrite=true; 
+put file://C:\TFS\CSG\Enterprise\Database\OperationalDataStore\Snowflake\SmartAdvisor\CI\SnowFlakeDatabase\Data\adm.Posting_Group.txt @WCSODS_FK.adm.%Posting_Group auto_compress=true overwrite=true; 
+put file://C:\TFS\CSG\Enterprise\Database\OperationalDataStore\Snowflake\SmartAdvisor\CI\SnowFlakeDatabase\Data\adm.Process.txt @WCSODS_FK.adm.%Process auto_compress=true overwrite=true; 
+put file://C:\TFS\CSG\Enterprise\Database\OperationalDataStore\Snowflake\SmartAdvisor\CI\SnowFlakeDatabase\Data\adm.Process_Format_Files.txt @WCSODS_FK.adm.%Process_Format_Files auto_compress=true overwrite=true; 
+put file://C:\TFS\CSG\Enterprise\Database\OperationalDataStore\Snowflake\SmartAdvisor\CI\SnowFlakeDatabase\Data\adm.Process_Primary_Key.txt @WCSODS_FK.adm.%Process_Primary_Key auto_compress=true overwrite=true; 
+put file://C:\TFS\CSG\Enterprise\Database\OperationalDataStore\Snowflake\SmartAdvisor\CI\SnowFlakeDatabase\Data\adm.Product.txt @WCSODS_FK.adm.%Product auto_compress=true overwrite=true; 
+put file://C:\TFS\CSG\Enterprise\Database\OperationalDataStore\Snowflake\SmartAdvisor\CI\SnowFlakeDatabase\Data\adm.Status_Code.txt @WCSODS_FK.adm.%Status_Code auto_compress=true overwrite=true; 

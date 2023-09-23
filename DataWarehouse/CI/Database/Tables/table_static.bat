@@ -1,0 +1,4 @@
+@ECHO OFF
+
+ECHO "CREATING STATIC TABLE SCRIPTS"
+type Static\*.SQL > tblstat.sql

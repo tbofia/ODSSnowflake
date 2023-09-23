@@ -1,0 +1,75 @@
+select '['||current_date||' '||current_time||']: '||'Select An Active Datawarehouse';
+USE WAREHOUSE &SNOWSQL_WH;
+
+select '['||current_date||' '||current_time||']: '||'Creating database roles';
+!source UserRole.sql;
+
+select '['||current_date||' '||current_time||']: '||'Creating schema';
+!source Schema.sql;
+
+select '['||current_date||' '||current_time||']: '||'Configuring Database Settings';
+!source Database.sql;
+
+select '['||current_date||' '||current_time||']: '||'Creating file formats';
+!source FileFormats.sql;
+
+select '['||current_date||' '||current_time||']: '||'Creating pre-deployment stored procedures';
+!source storproc\sppre.sql;
+
+select '['||current_date||' '||current_time||']: '||'Dropping all foreign keys';
+    call ADM.DROP_OBJECT('drop', 'constraint', 'foreign key', '', '');
+
+select '['||current_date||' '||current_time||']: '||'Dropping static dev tables';
+!source tables\tbldrop.sql;
+
+select '['||current_date||' '||current_time||']: '||'Creating static dev tables';
+!source tables\tblstat.sql;
+
+select '['||current_date||' '||current_time||']: '||'Inserting Dev Data into stage';
+!source data\tbldata_put.sql;
+
+select '['||current_date||' '||current_time||']: '||'Inserting Dev Data into table';
+!source data\tbldata_copy.sql;
+
+select '['||current_date||' '||current_time||']: '||'Creating static views';
+!source Views\vwstat.sql;
+
+select '['||current_date||' '||current_time||']: '||'Creating static dev foreign keys';
+!source ForeignKeys\fkstat.sql;
+
+select '['||current_date||' '||current_time||']: '||'Creating/Updating dynamic tables';
+!source tables\tbldyn.sql;
+
+select '['||current_date||' '||current_time||']: '||'Creating dynamic views';
+!source Views\vwdyn.sql;
+
+select '['||current_date||' '||current_time||']: '||'Creating Functions';
+!source functions\udfstat.sql;
+
+select '['||current_date||' '||current_time||']: '||'Creating dynamic stored procedures';
+!source storproc\spdyn.sql;
+
+select '['||current_date||' '||current_time||']: '||'Creating Triggers';
+!source Triggers\trigdyn.sql;
+
+select '['||current_date||' '||current_time||']: '||'Applying DML/DDL with dependencies across multiple db objects';
+!source Update\depends.sql;
+
+select '['||current_date||' '||current_time||']: '||'Dropping the Unused DB objects';
+!source Update\drop_unused_db_objects.sql;
+
+select '['||current_date||' '||current_time||']: '||'Creating dynamic foreign keys';
+!source ForeignKeys\fkdyn.sql;
+
+select '['||current_date||' '||current_time||']: '||'Creating schema permissions';
+!source SchemaPermissions.sql;
+
+select '['||current_date||' '||current_time||']: '||'Creating Version';
+!source Tables\AppVersion.sql;
+
+select '['||current_date||' '||current_time||']: '||'Creating Tasks';
+!source Tasks\taskstat.sql;
+
+select '['||current_date||' '||current_time||']: '||'Alter Tasks Resume';
+!source Tasks\taskstat_resume.sql;
+

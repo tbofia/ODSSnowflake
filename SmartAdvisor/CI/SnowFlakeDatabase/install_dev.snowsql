@@ -1,0 +1,13 @@
+select '['||current_date||' '||current_time||']: '||'Switch Role to DB_DEV';
+
+USE ROLE DB_DEV;
+
+select '['||current_date||' '||current_time||']: '||'Select An Active Datawarehouse';
+
+USE WAREHOUSE &DWSIZE;
+
+!source install.snowsql;
+
+select '['||current_date||' '||current_time||']: '||'Performing dev only schema updates';
+
+!source _working\Update\DevOnlySchemaUpdates.sql;

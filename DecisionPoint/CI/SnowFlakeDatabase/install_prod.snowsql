@@ -1,0 +1,9 @@
+select '['||current_date||' '||current_time||']: '||'Switch Role to DB_OPS';
+
+USE ROLE DB_OPS;
+
+select '['||current_date||' '||current_time||']: '||'Select An Active Datawarehouse';
+
+USE WAREHOUSE &DWSIZE;
+
+!source install.snowsql;

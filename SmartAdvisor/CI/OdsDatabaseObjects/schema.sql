@@ -1,0 +1,4 @@
+IF SCHEMA_ID('adm') IS NULL
+EXEC ('CREATE SCHEMA adm')
+GO
+
